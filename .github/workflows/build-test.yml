@@ -27,7 +27,7 @@ jobs:
   build-test:
     runs-on: ubuntu-latest
     env: # $BUNDLE_GEMFILE must be set at the job level, so it is set for all steps
-      BUNDLE_GEMFILE: ${{ github.workspace }}/Gemfile
+      BUNDLE_GEMFILE: SimoneDeBonis/SimoneDeBonis.github.io/Gemfile #${{ github.workspace }}/Gemfile
     steps:
       - name: Checkout
         if: ${{ github.repository == 'MrGreensWorkshop/MrGreen-JekyllTheme' }}
