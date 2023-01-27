@@ -9,6 +9,12 @@ layout: default
 {%- assign lng = get_lng -%}
 {%- include post_common/post-main.html post = page -%}
 
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
 {%-comment-%} Pagination {%-endcomment-%}
 {% if site.posts.size > 1 -%}
   {% include multi_lng/get-pages-by-lng.liquid pages = site.posts -%}
