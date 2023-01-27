@@ -1,7 +1,7 @@
 ---
 layout: projects
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
-lng_pair: progetti #id_projects
+lng_pair:  id_projects #progetti
 
 # publish date (used for seo)
 # if not specified, site.time will be used.
