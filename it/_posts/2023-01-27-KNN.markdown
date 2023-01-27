@@ -70,10 +70,8 @@ $
     \omega_2 \quad if \quad \frac{N_1}{N}\frac{k(X|\omega_1)}{N_1v}< \frac{N_2}{N}\frac{k(X|\omega_2)}{N_2v}  \end{cases}
 $
 So: 
-$
-    g(x) = \begin{cases} \omega_1 \quad if \quad k(X|\omega_1)> k(X|\omega_2)\\ 
-    \omega_2 \quad if \quad k(X|\omega_1)< k(X|\omega_2)  \end{cases}
-$
+$g(x) = \begin{cases} \omega_1 \quad if \quad k(X|\omega_1)> k(X|\omega_2)\\ 
+    \omega_2 \quad if \quad k(X|\omega_1)< k(X|\omega_2)  \end{cases}$
 
 *Volumetric KNN*
 
