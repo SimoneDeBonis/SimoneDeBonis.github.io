@@ -45,28 +45,24 @@ date: 2023-01-27 11:32:53 +0900
 <!-- outline-start -->
 
 {{ website_info_text_first }}
-\begin{center}
+
 "If it walks like a duck, quacks like a duck, then it's probably a duck"
-\end{center}
+
 
 Given a region of space L(X) centered on X, of volume v, the probability is approximable as p(X)v and can be estimated as:
-\begin{equation*}
-\hat{p}(X)v=\frac{k(X)}{N}^\text{N of instances in L(x)}_\text{N of instances}
-\hspace{0.3in} \hat{p}(X)= \frac{k(X)}{Nv}
-\end{equation*} 
+$
+\hat{p}(X)v=\frac{k(X)}{N}^\text{N of instances in L(x)}_\text{N of instances} \hat{p}(X)= \frac{k(X)}{Nv}
+$
 Requires:
-\begin{itemize}
-\item A set of labeled records;
-\item A proximity metric to compute distances/similarities;
-\item k, the number o nearest neighbours (volumetric);
-\item A method for using class labels of K nearest neighbours to determine the class label of the new record (e.g. majority vote).
-\end{itemize}
+- A set of labeled records;
+- A proximity metric to compute distances/similarities;
+- k, the number o nearest neighbours (volumetric);
+- A method for using class labels of K nearest neighbours to determine the class label of the new record (e.g. majority vote).
 
-%TODO check if true
+
 The majority vote rule can be improved considering the inverse of the square of the distance as weight for each vote.
 
-\vspace{0.25in}
-\textbf{Voting KNN}
+*Voting KNN*
 
 From $P(X)=\frac{k(x)}{Nv}$ we can build a bayes classifier with $p(\omega_i) = \frac{N_i}{N}$
 \begin{equation*}
