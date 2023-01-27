@@ -143,8 +143,8 @@ archives:
 
 # for about layout
 about:
-  title: Su di me
-  button_name: About
+  title: About
+  button_name: Profilo
   email_title: email
 
 # for links layout
@@ -156,8 +156,8 @@ links:
 
 # for projects layout
 projects:
-  title: Progetti
-  button_name: Projects
+  title: Projects
+  button_name: Progetti
   read_more_text: Read more
   read_less_text: Read less
 
@@ -169,7 +169,7 @@ privacy-policy:
 constants:
   greetings: Hello
   welcome: Welcome
-  sample: Sample
+  sample: Data Scientist
 
 # for contact form
 contact_form:
