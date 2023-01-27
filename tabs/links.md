@@ -61,36 +61,42 @@ page_data:
     # Esperienza
     - type: id_esperienza
       title: "IVECO"
+      url: "www.google.it"
       info: "Tesi di laurea banale"
     - type: id_esperienza
       title: "GeDinfo"
+      url: "www.google.it"
       info: "Machine Learning per cybersecurity"
     - type: id_esperienza
       title: "AlmaCube"
       info: "Corsi di formazione in ambito startup"
-      
+
     # Istruzione
     - type: id_Istruzione
       title: "UNIVPM 2021-2023"
+      url: "www.google.it"
       info: "Data Science per l'Economia e le Imprese."
     - type: id_Istruzione
       title: "UNIBO 2017-2021"
       info: "Economia, Mercati e Istituzioni"
     - type: id_Istruzione
       title: "A. Roiti 2012-2017"
+      url: "www.google.it"
       info: "Liceo Scientifico, Ferrara"
 
     # formazione
     - type: id_formazione
       title: "IFOA"
+      url: "www.google.it"
       url: ""
       info: "Artificial Intelligence & Machine Learning"
    - type: id_formazione
       title: "IFOA"
+      url: "www.google.it"
       url: ""
       info: "Applicazioni di Deep Learning"
    - type: id_formazione
       title: "Forpin"
-      url: ""
+      url: "www.google.it"
       info: "Marketing Analytics & Business Intelligence"
 ---
