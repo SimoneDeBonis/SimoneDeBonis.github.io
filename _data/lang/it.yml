@@ -137,8 +137,8 @@ home:
 
 # for archives layout
 archives:
-  title: Archivio
-  button_name: Archive
+  title: Archive
+  button_name: Archivio
   page_header: Archive
 
 # for about layout
