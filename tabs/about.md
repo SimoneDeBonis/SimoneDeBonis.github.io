@@ -36,7 +36,7 @@ img: ":about.jpg"
 #published: false
 ---
 
-{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
+Hi, I'm a Data Science student from Italy
 
 {%- include util/auto-content-generator.liquid -%}
 {{ website_info_text_first }}
