@@ -37,6 +37,7 @@ date: 2021-08-10 11:32:53 +0900
 #search_engine_exclude: true
 # to disable this page, simply set published: false or delete this file
 #published: false
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 ---
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
@@ -46,7 +47,6 @@ date: 2021-08-10 11:32:53 +0900
 <!-- outline-start -->
 
 {{ website_info_text_first }}
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 
 <!-- outline-end -->
