@@ -48,19 +48,21 @@ page_data:
   category:
     - title: "Istruzione"
       type: id_istruzione
-      color: "gray"
-    - title: "Web Design"
-      type: id_webdesign
+      color: "blue"
+
+    - title: "Esperienza"
+      type: id_esperienza
       color: "#F4A273"
-    - title: "Programming"
-      type: id_programming
+
+    - title: "Formazione"
+      type: id_formazione
       color: "#62b462"
 
   list:
     -
-    # programming
-    - type: id_programming
-      title: "Stack OverFlow"
+    # esperienza
+    - type: id_esperienza
+      title: "AlmaCube"
       url: "https://stackoverflow.com/"
       info: "Stack Overflow is a question and answer website for professional and enthusiastic programmers."
 
