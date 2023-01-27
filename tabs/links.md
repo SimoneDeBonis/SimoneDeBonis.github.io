@@ -46,57 +46,49 @@ page_data:
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:
-    - title: "Istruzione"
-      type: id_Istruzione
+    - title: "JekyII / Liquid"
+      type: id_jekyiiliquid
       color: "gray"
-    - title: "Formazione"
-      type: id_formazione
+    - title: "Web Design"
+      type: id_webdesign
       color: "#F4A273"
-    - title: "Esperienza"
-      type: id_Esperienza
+    - title: "Programming"
+      type: id_programming
       color: "#62b462"
 
   list:
     -
-    # Esperienza
-    - type: id_esperienza
-      title: "IVECO"
-      url: "www.google.it"
-      info: "Tesi di laurea banale"
-    - type: id_esperienza
-      title: "GeDinfo"
-      url: "www.google.it"
-      info: "Machine Learning per cybersecurity"
-    - type: id_esperienza
-      title: "AlmaCube"
-      info: "Corsi di formazione in ambito startup"
+    # programming
+    - type: id_programming
+      title: "Stack OverFlow"
+      url: "https://stackoverflow.com/"
+      info: "Stack Overflow is a question and answer website for professional and enthusiastic programmers."
 
-    # Istruzione
-    - type: id_Istruzione
-      title: "UNIVPM 2021-2023"
-      url: "www.google.it"
-      info: "Data Science per l'Economia e le Imprese."
-    - type: id_Istruzione
-      title: "UNIBO 2017-2021"
-      info: "Economia, Mercati e Istituzioni"
-    - type: id_Istruzione
-      title: "A. Roiti 2012-2017"
-      url: "www.google.it"
-      info: "Liceo Scientifico, Ferrara"
+    # jekyiiliquid
+    - type: id_jekyiiliquid
+      title: "Jekyll"
+      url: "https://jekyllrb.com/"
+      info: "Transform your plain text into static websites and blogs."
+    - type: id_jekyiiliquid
+      title: "Jekyll Cheat Sheet"
+      url: "https://cloudcannon.com/community/jekyll-cheat-sheet/"
+      info: "There are so many Jekyll variables and filters to remember and it can be tricky to keep it all in your head. This cheat sheet serves as a quick reference of everything Jekyll can do."
+    - type: id_jekyiiliquid
+      title: "Liquid for Designers"
+      url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Designers"
+      info: "Liquid for Designers wiki on GitHub"
+    - type: id_jekyiiliquid
+      title: "Liquid for Programmers"
+      url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers"
+      info: "Liquid for Programmers wiki on GitHub"
+    - type: id_jekyiiliquid
+      title: "Liquid Reference"
+      url: "https://shopify.dev/api/liquid/"
+      info: "Liquid is a template language created by Shopify and written in Ruby. It is now available as an open source project on GitHub"
 
-    # formazione
-    - type: id_formazione
-      title: "IFOA"
-      url: "www.google.it"
-      url: ""
-      info: "Artificial Intelligence & Machine Learning"
-   - type: id_formazione
-      title: "IFOA"
-      url: "www.google.it"
-      url: ""
-      info: "Applicazioni di Deep Learning"
-   - type: id_formazione
-      title: "Forpin"
-      url: "www.google.it"
-      info: "Marketing Analytics & Business Intelligence"
+    # webdesign
+    - type: id_webdesign
+      title: "W3Schools"
+      url: "https://www.w3schools.com/"
+      info: "W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many more."
 ---
