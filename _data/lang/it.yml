@@ -23,7 +23,7 @@ date:
 
 not_found:
   header: Pagina non trovata
-  line1: The page you requested could not be found.
+  line1: La pagina richiesta non è stata trovata.
   line2: Try menu, or site search if available.
 
 no_translation_tooltip: No Translation
@@ -34,8 +34,8 @@ navigation:
 color_scheme_switch_tooltip: Color scheme
 
 search:
-  placeholder: Search
-  noResultText: No results found.
+  placeholder: Ricerca
+  noResultText: Nessun risultato trovato.
 
 image_viewer:
   load_error: The image could not be loaded.
@@ -143,7 +143,7 @@ archives:
 
 # for about layout
 about:
-  title: About
+  title: Su di me
   button_name: About
   email_title: email
 
@@ -156,7 +156,7 @@ links:
 
 # for projects layout
 projects:
-  title: Projects
+  title: Progetti
   button_name: Projects
   read_more_text: Read more
   read_less_text: Read less
