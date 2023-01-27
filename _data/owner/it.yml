@@ -2,13 +2,13 @@
 # Owner's Personal Information
 ###########################################################
 # This is your brand name
-brand: "サイト名"
+brand: "Simone De Bonis"
 
 # text below the brand name
 brand_sub_text: "$site_sample"
 
 # used for seo meta post author (if it's not defined in post)
-name: "作者名"
+name: "Simone De Bonis"
 
 # home page top header texts
 home:
@@ -42,15 +42,15 @@ creative_commons:
 # seo meta this is needed for each language
 # If meta_description is not defined in front matter, it's created from (post / page) content,
 # if it has no content, this will be used for page description. It is also used in manifest.json
-meta_common_description: "メタディスクリプション"
+meta_common_description: "Your meta description."
 
 # contact options (side nav bottom and about page)
 # the order of the items will be shown as here.
 # comment to remove any contact item
 contacts:
-  #- github: ""
-  #- email: ""
-  #- linkedin: ""
+  - github: "SimoneDeBonis"
+  - email: "simone.debonis98@gmail.com"
+  - linkedin: "simonedebonis/"
   #- twitter: ""
   #- mastodon: ""
   #- instagram: ""
