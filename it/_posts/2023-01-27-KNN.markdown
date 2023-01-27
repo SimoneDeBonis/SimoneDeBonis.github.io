@@ -70,29 +70,24 @@ From $P(X)=\frac{k(x)}{Nv}$ we can build a bayes classifier with $p(\omega_i) = 
 \omega_2 \quad if \quad \frac{N_1}{N}\frac{k(X|\omega_1)}{N_1v}< \frac{N_2}{N}\frac{k(X|\omega_2)}{N_2v}  \end{cases}$$</p>
 
 So: 
-$g(x) = \begin{cases} \omega_1 \quad if \quad k(X|\omega_1)> k(X|\omega_2)\\ 
-    \omega_2 \quad if \quad k(X|\omega_1)< k(X|\omega_2)  \end{cases}$
+<p style="text-align: center;">$$g(x) = \begin{cases} \omega_1 \quad if \quad k(X|\omega_1)> k(X|\omega_2)\\ 
+    \omega_2 \quad if \quad k(X|\omega_1)< k(X|\omega_2)  \end{cases}$$</p>
 
 *Volumetric KNN*
 
 Fixing k, the volume of the region centered in X depends on X, $P(x) = \frac{k}{Nv(x)}$
 
-$
-    g(x) = \begin{cases} \omega_1 \quad if \quad \frac{N_1}{N}\frac{k}{N_1v_1(X)}> \frac{N_2}{N}\frac{k}{N_2v_2(X)}\\ 
-    \omega_2 \quad if \quad\frac{N_1}{N}\frac{k}{N_1v_1(X)} < \frac{N_2}{N}\frac{k}{N_2v_2(X)}\end{cases}
-$
+<p style="text-align: center;">$$g(x) = \begin{cases} \omega_1 \quad if \quad \frac{N_1}{N}\frac{k}{N_1v_1(X)}> \frac{N_2}{N}\frac{k}{N_2v_2(X)}\\ 
+    \omega_2 \quad if \quad\frac{N_1}{N}\frac{k}{N_1v_1(X)} < \frac{N_2}{N}\frac{k}{N_2v_2(X)}\end{cases}$$</p>
 So:
-$
-    g(x) = \begin{cases} \omega_1 \quad if \quad d(X,Knn_2) > d(X,Knn_1)\\ 
-    \omega_2 \quad if \quad  d(X,Knn_2) < d(X,Knn_1)  \end{cases}
-$
+<p style="text-align: center;">$$g(x) = \begin{cases} \omega_1 \quad if \quad d(X,Knn_2) > d(X,Knn_1)\\ 
+    \omega_2 \quad if \quad  d(X,Knn_2) < d(X,Knn_1)  \end{cases}$$</p>
 
 where $Knn_i$ is the k-nearest-neighbor of class i
 Since v(X) is a shere, its volume is proportional to the radius so:
-$
-    g(x) = \begin{cases} \omega_1 \quad if \quad v_2(X) > v_1(X)\\ 
-    \omega_2 \quad if \quad v_2(X)<v_1(X)  \end{cases}
-$
+
+<p style="text-align: center;">$$g(x) = \begin{cases} \omega_1 \quad if \quad v_2(X) > v_1(X)\\ 
+\omega_2 \quad if \quad v_2(X)< v_1(X)  \end{cases}$$</p>
 
 For documents, cosine similarity is better than correlation or euclidean.
 
