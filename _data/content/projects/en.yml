@@ -25,19 +25,16 @@ page_data:
   list:
     # example
     - type: id_example
-      project_name: "Example Project"
+      project_name: "Predicting Default of Italian Municipalities"
       project_excerpt: "Examples"
       img: ":project1_thumb.jpg"
       img_title: "img title1"
-      date: "2021-03-13"
+      date: "2023-01-20"
       post: |
         # Examples
 
         This is an example page to display markdown related styles for Mr. Green Jekyll Theme.
-
-        ### Headings (centered)
-        {:data-align="center"}
-
+        In realtà questa è solo una prova
         # Heading 1
 
         ## Heading 2
