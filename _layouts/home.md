@@ -22,8 +22,7 @@ layout: default
   <div class="home-heading" {{ home_img_background_style }}>
     {{ home_img_tag }}
     <div class="home-heading-message">
-      {{ site.data.owner[lng].home.top_header_line1
-       }}
+      
       {%- if site.data.owner[lng].home.top_header_line2 %}
         <br>
 
