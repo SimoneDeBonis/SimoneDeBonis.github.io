@@ -5,6 +5,7 @@
 
 layout: default
 # main page (index.html)
+#{{ home_img_tag }}
 ---
 {%- include multi_lng/get-pages-by-lng.liquid pages = site.posts -%}
 
@@ -19,7 +20,7 @@ layout: default
 
 <div class="multipurpose-container home-heading-container">
   <div class="home-heading" {{ home_img_background_style }}>
-    {{ home_img_tag }}
+    
     <div class="home-heading-message">
       {{ site.data.owner[lng].home.top_header_line1
         | replace: site.data.conf.main.brand_replace, site.data.owner[lng].brand
