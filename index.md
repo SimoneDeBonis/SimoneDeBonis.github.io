@@ -35,11 +35,12 @@ img: ":home-heading.jpg"
 # to disable this page, simply set published: false or delete this file
 # don't forget that this is root index.html. If you disable this, there will be no index.html page to open
 #published: false
+# {%- include util/auto-content-generator.liquid -%}
+# {{ website_info_text_first }}
+
+# {{ website_info_text_second }}
 ---
 
 Provo a scrivere anche qua
 
-{%- include util/auto-content-generator.liquid -%}
-{{ website_info_text_first }}
 
-{{ website_info_text_second }}
