@@ -22,14 +22,14 @@ date:
   months: [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
 
 not_found:
-  header: Page not found
+  header: Pagina non trovata
   line1: The page you requested could not be found.
   line2: Try menu, or site search if available.
 
 no_translation_tooltip: No Translation
 
 navigation:
-  contact_header: Contact
+  contact_header: Contatti
 
 color_scheme_switch_tooltip: Color scheme
 
