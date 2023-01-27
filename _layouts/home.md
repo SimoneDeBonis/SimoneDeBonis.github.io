@@ -23,9 +23,7 @@ layout: default
     {{ home_img_tag }}
     <div class="home-heading-message">
       {{ site.data.owner[lng].home.top_header_line1
-        | replace: site.data.conf.main.brand_replace, site.data.owner[lng].brand
-        | replace: site.data.conf.main.greetings_replace, site.data.lang[lng].constants.greetings
-}}
+       }}
       {%- if site.data.owner[lng].home.top_header_line2 %}
         <br>
 
