@@ -46,6 +46,10 @@ date: 2021-08-10 11:32:53 +0900
 <!-- outline-start -->
 
 {{ website_info_text_first }}
+$$
+\displaystyle\sum_{k=3}^5 k^2=3^2 + 4^2 + 5^2 =50
+$$
+
 
 <!-- outline-end -->
 
