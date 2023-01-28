@@ -82,16 +82,19 @@ page_data:
       title: "Artificial Intelligence & Machine Learning"
       url: ""
       info: ""
+      date: "IFOA, 2021"
 
     - type: id_formazione
       title: "Applicazioni di Deep Learning"
       url: ""
       info: ""
+      date: "IFOA, 2021"
 
     - type: id_formazione
       title: "Marketing Analytics & Business Intelligence"
       url: ""
       info: ""
+      date: "Forpin, 2022"
 
     -
     # programming
