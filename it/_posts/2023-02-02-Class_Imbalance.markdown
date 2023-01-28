@@ -38,7 +38,14 @@ date: 2022-03-03 12:32:10 +0900
 # to disable this page, simply set published: false or delete this file
 #published: false
 ---
+{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-{%- capture readme_file -%}{%- include_relative _README.md -%}{%- endcapture -%}
-{%- assign tmp_content = readme_file | split: "<!-- readme -->" -%}
-{{tmp_content[1]}}
+{%- include util/auto-content-generator.liquid -%}
+
+<!-- outline-start -->
+
+{{ website_info_text_first }}
+
+<!-- outline-end -->
+
+{{ website_info_text_second }}
