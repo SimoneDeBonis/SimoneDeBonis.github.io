@@ -153,6 +153,7 @@ links:
   button_name: CV
   link_text: Web site
   info_text: Info
+  date_text: Date
 
 # for projects layout
 projects:

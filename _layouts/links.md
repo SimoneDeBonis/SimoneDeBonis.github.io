@@ -30,6 +30,7 @@ layout: default
       <tr>
         <th>{{ site.data.lang[lng].links.link_text }}</th>
         <th>{{ site.data.lang[lng].links.info_text }}</th>
+        <th>{{ site.data.lang[lng].links.date_text }}</th>
       </tr>
     </thead>
     <tbody>
