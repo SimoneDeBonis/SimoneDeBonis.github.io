@@ -14,13 +14,13 @@ page_data:
   category:
     - title: "Example"
       type: id_example
-      color: "#3C6255"
+      color: "#2C74B3"
     - title: "Picture"
       type: id_picture
-      color: "#61876E"
+      color: "#0081C9"
     - title: "Quote"
       type: id_quote
-      color: "#A6BB8D"
+      color: "#5BC0F8"
 
   list:
     # example
