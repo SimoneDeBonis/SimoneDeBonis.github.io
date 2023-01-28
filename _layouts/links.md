@@ -29,9 +29,8 @@ layout: default
     <thead>
       <tr>
         <th>{{ site.data.lang[lng].links.link_text }}</th>
-        <th>{{ site.data.lang[lng].links.date_text }}</th>
         <th>{{ site.data.lang[lng].links.info_text }}</th>
-        
+        <th>{{ site.data.lang[lng].links.date_text }}</th>
       </tr>
     </thead>
     <tbody>
@@ -50,6 +49,9 @@ layout: default
           </td>
           <td>
             <p>{{ list.info }}</p>
+          </td>
+          <td>
+            <p>{{ link_date }}</p>
           </td>
         </tr>
       {%- endfor %}
