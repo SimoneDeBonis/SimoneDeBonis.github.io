@@ -28,9 +28,9 @@ layout: default
   <table class="table {{ hover_class }}">
     <thead>
       <tr>
-        <th class="col-6">{{ site.data.lang[lng].links.link_text }}</th>
-        <th class="col-6">{{ site.data.lang[lng].links.info_text }}</th>
-        <th class="col-3">{{ site.data.lang[lng].links.date_text }}</th>
+        <th style="width:30%">{{ site.data.lang[lng].links.link_text }}</th>
+        <th style="width:50%">{{ site.data.lang[lng].links.info_text }}</th>
+        <th style="width:20%">{{ site.data.lang[lng].links.date_text }}</th>
       </tr>
     </thead>
     <tbody>
