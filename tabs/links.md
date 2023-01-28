@@ -48,19 +48,19 @@ page_data:
   category:
     - title: "Istruzione"
       type: id_istruzione
-      color: "#B74803"
+      color: "#1e4a28"
 
     - title: "Esperienza"
       type: id_esperienza
-      color: "#CC6D3D
+      color: "#51a16a"
 
     - title: "Formazione"
       type: id_formazione
-      color: "#022E51"
+      color: "#cc7a3d"
 
   list:
     -
-    # esperienza
+    # programming
     - type: id_esperienza
       title: "AlmaCube"
       url: "https://stackoverflow.com/"
