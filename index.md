@@ -41,11 +41,11 @@ img: ":home-heading.jpg"
 # {{ website_info_text_second }}
 ---
 
-###Hello!
+### Hello!
 
 Let me introduce myself, I'm Simone and I'm a Data Science student from Italy, 
 
-##What I'm working on: 
+## What I'm working on: 
 - Machine Learning applied to Root Cause Analysis in the automotive industry, this is my university thesis;
 - Machine Learning applied to Cybersecurity to prevent intrusions in a server.
 
