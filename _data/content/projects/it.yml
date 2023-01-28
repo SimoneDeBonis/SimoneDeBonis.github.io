@@ -5,7 +5,7 @@
 page_data:
   main:
     header: "Projects"
-    info: ""
+    info: " "
     text_color: "white"
     # if you don't want to use background image, comment it. back_color will be activated.
     img: ":projects-heading.jpg"
@@ -14,13 +14,13 @@ page_data:
   category:
     - title: "Example"
       type: id_example
-      color: "gray"
+      color: "#3C6255"
     - title: "Picture"
       type: id_picture
-      color: "#62b462"
+      color: "#61876E"
     - title: "Quote"
       type: id_quote
-      color: "#2FD0ED"
+      color: "#A6BB8D"
 
   list:
     # example
