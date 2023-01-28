@@ -48,15 +48,15 @@ page_data:
   category:
     - title: "Istruzione"
       type: id_istruzione
-      color: "#1e4a28"
+      color: "#144272"
 
     - title: "Experience"
       type: id_esperienza
-      color: "#51a16a"
+      color: "#205295"
 
     - title: "Formazione"
       type: id_formazione
-      color: "#cc7a3d"
+      color: "#2C74B3"
 
   list:
     -
