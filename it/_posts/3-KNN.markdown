@@ -9,9 +9,9 @@ title: KNN
 # multiple category is not supported
 category: auto generated
 # multiple tag entries are possible
-tags: [Data Science, theory]
+tags: [Data Science, Theory]
 # thumbnail image for post
-img: ":duck.jpg"
+img: ":ducks.jpg"
 # disable comments on this page
 comments_disable: true
 
@@ -64,7 +64,7 @@ The majority vote rule can be improved considering the inverse of the square of 
 
 *Voting KNN*
 
-From $P(X)=\frac{k(x)}{Nv}$ we can build a bayes classifier with $p(\omega_i) = \frac{N_i}{N}$
+From $$P(X)=\frac{k(x)}{Nv}$$ we can build a bayes classifier with $$p(\omega_i) = \frac{N_i}{N}$$
 
 <p style="text-align: center;">$$g(x) = \begin{cases} \omega_1 \quad if \quad \frac{N_1}{N}\frac{k(X|\omega_1)}{N_1v}> \frac{N_2}{N}\frac{k(X|\omega_2)}{N_2v}\\ 
 \omega_2 \quad if \quad \frac{N_1}{N}\frac{k(X|\omega_1)}{N_1v}< \frac{N_2}{N}\frac{k(X|\omega_2)}{N_2v}  \end{cases}$$</p>
@@ -83,7 +83,7 @@ So:
 <p style="text-align: center;">$$g(x) = \begin{cases} \omega_1 \quad if \quad d(X,Knn_2) > d(X,Knn_1)\\ 
     \omega_2 \quad if \quad  d(X,Knn_2) < d(X,Knn_1)  \end{cases}$$</p>
 
-where $Knn_i$ is the k-nearest-neighbor of class i
+where Knn_i is the k-nearest-neighbor of i^t^h class
 Since v(X) is a shere, its volume is proportional to the radius so:
 
 <p style="text-align: center;">$$g(x) = \begin{cases} \omega_1 \quad if \quad v_2(X) > v_1(X)\\ 

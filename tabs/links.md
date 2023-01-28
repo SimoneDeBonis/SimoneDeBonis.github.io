@@ -50,7 +50,7 @@ page_data:
       type: id_istruzione
       color: "#1e4a28"
 
-    - title: "Esperienza"
+    - title: "Experience"
       type: id_esperienza
       color: "#51a16a"
 

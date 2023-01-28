@@ -1,22 +1,22 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
-lng_pair: id_What_is_this
-title: "Welcome to Jekyll!"
+lng_pair: bayes1
+title: "Bayes Classifier"
 
 # post specific
 # if not specified, .name will be used from _data/owner/[language].yml
-author: Jekyll
+author: 
 # multiple category is not supported
 category: jekyll
 # multiple tag entries are possible
 tags: [jekyll, example post, sample, test]
 # thumbnail image for post
-img: ":post_pic3.jpg"
+img: ":choice.jpg"
 # disable comments on this page
 #comments_disable: true
 
 # publish date
-date: 2022-01-01 10:04:30 +0900
+date: 2023-01-28 10:04:30 +0900
 
 # seo
 # if not specified, date will be used.
