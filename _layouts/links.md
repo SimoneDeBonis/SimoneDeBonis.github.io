@@ -37,9 +37,6 @@ layout: default
       {%- for list in links_data.list %}
         {%- if list.type != category.type %}{% continue %}{% endif -%}
         
-          {%- assign link_onclick = nil -%}
-          {%- capture link_url -%} <a href="{{ list.url }}" target="_blank" rel="noopener noreferrer"><b>{{ list.title }}</b></a> {%- endcapture -%}
-        {%- endif %}
         <tr class="link-item" {{ link_onclick }}>
           <td>
             <p>{{ link_url }}</p>
