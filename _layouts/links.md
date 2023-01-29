@@ -51,7 +51,7 @@ layout: default
             <p>{{ list.info }}</p>
           </td>
           <td>
-            <p>{{ link_date }}</p>
+            <p>{{ link.date }}</p>
           </td>
         </tr>
       {%- endfor %}
