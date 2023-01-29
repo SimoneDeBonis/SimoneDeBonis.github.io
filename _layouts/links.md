@@ -36,10 +36,7 @@ layout: default
     <tbody>
       {%- for list in links_data.list %}
         {%- if list.type != category.type %}{% continue %}{% endif -%}
-        {%- if site.data.conf.others.links.use_rows_as_link -%}
-          {%- capture link_onclick -%} onclick="openURL('{{ list.url }}');" style="cursor: pointer;" {%- endcapture -%}
-          {%- capture link_url -%} <b>{{ list.title }}</b> {%- endcapture -%}
-        {% else %}
+        
           {%- assign link_onclick = nil -%}
           {%- capture link_url -%} <a href="{{ list.url }}" target="_blank" rel="noopener noreferrer"><b>{{ list.title }}</b></a> {%- endcapture -%}
         {%- endif %}

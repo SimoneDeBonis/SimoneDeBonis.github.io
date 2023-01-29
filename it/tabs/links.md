@@ -41,7 +41,7 @@ lng_pair: id_links
 ###########################################################
 page_data:
   main:
-    header: "Links"
+    header: "CV"
     info: "Your Links page description."
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
@@ -66,17 +66,19 @@ page_data:
       title: "Data Science per l'Economia e le Imprese"
       url: ""
       info: "Transform your plain text into static websites and blogs."
-      date: "2021-2023, UNIVPM"
+      date: "2021-2023, Univpm"
 
     - type: id_istruzione
       title: "Economia, Mercati e Istituzioni"
       url: ""
       info: "There are so many Jekyll variables and filters to remember and it can be tricky to keep it all in your head. This cheat sheet serves as a quick reference of everything Jekyll can do."
+      date: "2017-2021, Unibo"
 
     - type: id_istruzione
       title: "Liceo Scientifico"
       url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Designers"
       info: "Liquid for Designers wiki on GitHub"
+      date: "2012-2017, A. Roiti Ferrara"
 
     # Formazione
     - type: id_formazione
