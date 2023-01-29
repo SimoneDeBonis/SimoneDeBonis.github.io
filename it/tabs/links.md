@@ -100,7 +100,7 @@ page_data:
       date: "Forpin, 2022"
 
     -
-    # programming
+    # Esperienza
     - type: id_programming
       title: "Stack OverFlow"
       url: "https://stackoverflow.com/"
