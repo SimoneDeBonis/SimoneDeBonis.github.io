@@ -66,6 +66,7 @@ page_data:
       title: "Data Science per l'Economia e le Imprese"
       url: ""
       info: "Transform your plain text into static websites and blogs."
+      date: "2021-2023, UNIVPM"
 
     - type: id_istruzione
       title: "Economia, Mercati e Istituzioni"
