@@ -39,7 +39,7 @@ layout: default
         
         <tr class="link-item" {{ link_onclick }}>
           <td>
-            <p>{{ link_url }}</p>
+            <p>{{ list.title }}</p>
           </td>
           <td>
             <p>{{ list.info }}</p>
