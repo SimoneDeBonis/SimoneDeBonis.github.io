@@ -5,7 +5,7 @@ title: "Naive Bayes: "
 
 # post specific
 # if not specified, .name will be used from _data/owner/[language].yml
-author: Mr. Green's Workshop
+author: 
 # multiple category is not supported
 category: jekyll
 # multiple tag entries are possible

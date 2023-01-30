@@ -43,7 +43,7 @@ img: ":home-heading.jpg"
 
 ### Hello!
 
-Let me introduce myself, I'm Simone and I'm a Data Science student from Italy, 
+I'm Simone, a Data Science student from Italy passionate about Artifficial Intelligence and aerospace
 
 ## What I'm working on: 
 - Machine Learning applied to Root Cause Analysis in the automotive industry, this is my university thesis;

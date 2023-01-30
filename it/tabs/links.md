@@ -65,44 +65,44 @@ page_data:
     - type: id_istruzione
       title: "Data Science per l'Economia e le Imprese"
       url: ""
-      info: "Transform your plain text into static websites and blogs."
-      date: "2021-2023, Univpm"
+      info: "Computational statistics, Big Data Engineering, Big Data Econometrics."
+      date: "2021-2023, Ancona"
 
     - type: id_istruzione
       title: "Economia, Mercati e Istituzioni"
       url: ""
-      info: "There are so many Jekyll variables and filters to remember and it can be tricky to keep it all in your head. This cheat sheet serves as a quick reference of everything Jekyll can do."
-      date: "2017-2021, Unibo"
+      info: "Statistica, Econometria, Finanza Aziendale."
+      date: "2017-2021, Bologna"
 
     - type: id_istruzione
       title: "Liceo Scientifico"
-      url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Designers"
+      url: ""
       info: "Liquid for Designers wiki on GitHub"
-      date: "2012-2017, A. Roiti Ferrara"
+      date: "2012-2017, Ferrara"
 
     # Formazione
     - type: id_formazione
       title: "Artificial Intelligence & Machine Learning"
       url: ""
       info: ""
-      date: "IFOA, 2021"
+      date: "IFOA, 60 ore"
 
     - type: id_formazione
       title: "Applicazioni di Deep Learning"
       url: ""
       info: ""
-      date: "IFOA, 2021"
+      date: "IFOA, 60 ore"
 
     - type: id_formazione
       title: "Marketing Analytics & Business Intelligence"
       url: ""
       info: ""
-      date: "Forpin, 2022"
+      date: "Forpin, 120 ore"
 
     -
     # Esperienza
     - type: id_programming
       title: "Stack OverFlow"
-      url: "https://stackoverflow.com/"
+      url: ""
       info: "Stack Overflow is a question and answer website for professional and enthusiastic programmers."
 ---
