@@ -46,51 +46,61 @@ page_data:
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:
-    - title: "Istruzione"
+    - title: "Education"
       type: id_istruzione
       color: "#2C74B3"
 
-    - title: "Experience"
-      type: id_esperienza
+    - title: "Courses"
+      type: id_formazione
       color: "#0081C9"
 
-    - title: "Formazione"
-      type: id_formazione
+    - title: "Experience"
+      type: id_programming
       color: "#5BC0F8"
 
   list:
-    -
-    # programming
-    - type: id_esperienza
-      title: "AlmaCube"
-      url: "https://stackoverflow.com/"
-      info: "Stack Overflow is a question and answer website for professional and enthusiastic programmers."
+    # istruzione
+    - type: id_istruzione
+      title: "Data Science for Economics and Business"
+      url: ""
+      info: "Computational statistics, Big Data Engineering, Big Data Econometrics."
+      date: "2021-2023, Ancona"
 
-    # jekyiiliquid
     - type: id_istruzione
-      title: "Jekyll"
-      url: "https://jekyllrb.com/"
-      info: "Transform your plain text into static websites and blogs."
+      title: "Economics, Markets and Institutions"
+      url: ""
+      info: "Statistics, Econometrics, Corporate Finance."
+      date: "2017-2021, Bologna"
+
     - type: id_istruzione
-      title: "Jekyll Cheat Sheet"
-      url: "https://cloudcannon.com/community/jekyll-cheat-sheet/"
-      info: "There are so many Jekyll variables and filters to remember and it can be tricky to keep it all in your head. This cheat sheet serves as a quick reference of everything Jekyll can do."
-    - type: id_istruzione
-      title: "Liquid for Designers"
-      url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Designers"
+      title: "Liceo Scientifico"
+      url: ""
       info: "Liquid for Designers wiki on GitHub"
-    - type: id_istruzione
-      title: "Liquid for Programmers"
-      url: "https://github.com/Shopify/liquid/wiki/Liquid-for-Programmers"
-      info: "Liquid for Programmers wiki on GitHub"
-    - type: id_istruzione
-      title: "Liquid Reference"
-      url: "https://shopify.dev/api/liquid/"
-      info: "Liquid is a template language created by Shopify and written in Ruby. It is now available as an open source project on GitHub"
+      date: "2012-2017, Ferrara"
 
-    # webdesign
-    - type: id_webdesign
-      title: "W3Schools"
-      url: "https://www.w3schools.com/"
-      info: "W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many more."
+    # Formazione
+    - type: id_formazione
+      title: "Artificial Intelligence & Machine Learning"
+      url: ""
+      info: ""
+      date: "IFOA, 60 hours"
+
+    - type: id_formazione
+      title: "Deep Learning applications"
+      url: ""
+      info: ""
+      date: "IFOA, 60 hours"
+
+    - type: id_formazione
+      title: "Marketing Analytics & Business Intelligence"
+      url: ""
+      info: ""
+      date: "Forpin, 120 hours"
+
+    -
+    # Esperienza
+    - type: id_programming
+      title: "Stack OverFlow"
+      url: ""
+      info: "Stack Overflow is a question and answer website for professional and enthusiastic programmers."
 ---
