@@ -149,8 +149,8 @@ about:
   email_title: email
 
 # for links layout
-links:
-  title: Links
+CV:
+  title: CV
   button_name: CV
   link_text: 
   info_text: Info

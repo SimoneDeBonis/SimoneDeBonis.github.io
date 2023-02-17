@@ -76,8 +76,8 @@ layout: util/compress_js
   {% include_relative _js/home/heading-fade-in.js %}
 {% endif %}
 
-{%- if links_page_exist and site.data.conf.others.links.use_rows_as_link -%}
-  {% include_relative _js/links/open-url-in-new-page.js %}
+{%- if CV_page_exist and site.data.conf.others.CV.use_rows_as_link -%}
+  {% include_relative _js/CV/open-url-in-new-page.js %}
 {%- endif %}
 
 {% if projects_page_exist %}

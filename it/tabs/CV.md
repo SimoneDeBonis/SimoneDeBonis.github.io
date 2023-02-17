@@ -1,7 +1,7 @@
 ---
-layout: links
+layout: CV
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
-lng_pair: id_links
+lng_pair: id_cv
 
 # publish date (used for seo)
 # if not specified, site.time will be used.
@@ -35,9 +35,9 @@ lng_pair: id_links
 
 
 # you can always move this content to _data/content/ folder
-# just create new file at _data/content/links/[language].yml and move content below.
+# just create new file at _data/content/CV/[language].yml and move content below.
 ###########################################################
-#                Links Page Data
+#                CV Page Data
 ###########################################################
 page_data:
   main:
