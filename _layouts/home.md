@@ -9,6 +9,7 @@ layout: default
 ---
 {%- include multi_lng/get-pages-by-lng.liquid pages = site.posts -%}
 
+
 {%- if page.img %}
   {%- if site.data.conf.others.home.header_img_with_img_tag == true -%}
     {%- capture home_img_tag -%} <img src="{{ page.img }}" /> {%- endcapture -%}
@@ -55,7 +56,7 @@ layout: default
   <div class="row">
     <div class="col-md-12">
       <div class="home-intro-text markdown-style">
-        {{work.AI.content}}
+        {%- include util/auto-content-generator.liquid -%}
       </div>
     </div>
   </div>
