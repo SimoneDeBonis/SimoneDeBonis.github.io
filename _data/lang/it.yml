@@ -132,8 +132,8 @@ post-list:
 home:
   title:
   button_name: Home
-  new_posts_title: New Articles
-  new_posts_show_more_button: View More ...
+  new_posts_title: Nuovi Articoli
+  new_posts_show_more_button: Altri ...
   new_projects_title: Progetti in corso
 
 # for archives layout
@@ -152,16 +152,16 @@ about:
 links:
   title: Links
   button_name: CV
-  link_text: Web site
+  link_text: 
   info_text: Info
-  date_text: Date
+  date_text: Data
 
 # for projects layout
 projects:
   title: Projects
   button_name: Progetti
-  read_more_text: Read more
-  read_less_text: Read less
+  read_more_text: Espandi
+  read_less_text: Riduci
 
 # for privacy-policy layout
 privacy-policy:
