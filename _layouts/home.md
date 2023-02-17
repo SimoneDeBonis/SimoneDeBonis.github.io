@@ -18,6 +18,7 @@ layout: default
   {%- endif -%}
 {%- endif -%}
 
+{%- capture AI -%} <tabs.work.AI /> {%- endcapture -%}
 <div class="multipurpose-container home-heading-container">
   <div class="home-heading" {{ home_img_background_style }}>
     {{ home_img_tag }}
@@ -28,7 +29,7 @@ layout: default
     </div>
   </div>
   <div class="home-intro-text markdown-style">
-    {{ tabs.work.AI.content  }}
+    {{ AI  }}
   </div>
 </div>
 
