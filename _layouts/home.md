@@ -32,34 +32,6 @@ layout: default
   </div>
 </div>
 
-{%- assign lng = get_lng -%}
-<div class="multipurpose-container about-container">
-  <div class="row about-main">
-    <div class="col-md-3 about-img">
-      <img src="assets/img/home/AI.jpg" alt="">
-    </div>
-    <div class="col-md-9 about-header">
-      <h1 translate="no"><a href="https://simonedebonis.github.io/dla">Deep Learning Algorithms</a></h1>
-      <div class="meta-container">
-        {%- assign about_title = site.data.owner[lng].about.sub_title | replace: site.data.conf.main.sample_replace, site.data.lang[lng].constants.sample -%}
-          <p class="sub-title">
-            <i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>
-            &nbsp;{{ page.ai }}
-          </p>
-      </div>
-    </div>
-  </div>
-  <div class="row about-divider">
-    <hr>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <div class="about-msg markdown-style">
-        {{ tabs.work.AI  }}
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
