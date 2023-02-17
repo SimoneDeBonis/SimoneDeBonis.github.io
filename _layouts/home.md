@@ -36,6 +36,14 @@ layout: default
   </div>
 </div>
 
+<div class="multipurpose-container new-posts-container">
+  <h1>{{ site.data.lang[lng].home.new_projects_title}}</h1>
+  <ul class="new-posts">
+  <h2><a href="https://simonedebonis.github.io/dsa/"> Data science Algorithms </a> </h2>
+  <h2><a href="https://simonedebonis.github.io/tsa/"> Time Series Analysis </a> </h2>
+  <h2><a href="https://simonedebonis.github.io/dla/"> Deep Learning Algorithms </a></h2>
+  </ul>
+</div>
 
 <div class="multipurpose-container new-posts-container">
   <h1>{{ site.data.lang[lng].home.new_posts_title }}</h1>
@@ -59,13 +67,6 @@ layout: default
 
 
 
-<div class="multipurpose-container new-posts-container">
-  <h1>{{ site.data.lang[lng].home.new_projects_title}}</h1>
-  <ul class="new-posts">
-  <h2><a href="https://simonedebonis.github.io/dsa/"> Data science Algorithms </a> </h2><br />
-  <h2><a href="https://simonedebonis.github.io/tsa/"> Time Series Analysis </a> </h2><br />
-  <h2><a href="https://simonedebonis.github.io/dla/"> Deep Learning Algorithms </a></h2>
-  </ul>
-</div>
+
 
 
