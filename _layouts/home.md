@@ -41,7 +41,7 @@ layout: default
       <img src="assets/img/home/AI.jpg" alt="">
     </div>
     <div class="col-md-9 about-header">
-      <h1 translate="no">[Deep Learning Algorithms](https://simonedebonis.github.io/dla)</h1>
+      <h1 translate="no"><a href="https://simonedebonis.github.io/dla">Deep Learning Algorithms</a></h1>
       <div class="meta-container">
         {%- assign about_title = site.data.owner[lng].about.sub_title | replace: site.data.conf.main.sample_replace, site.data.lang[lng].constants.sample -%}
         {%- if site.data.owner[lng].about.sub_title %}
