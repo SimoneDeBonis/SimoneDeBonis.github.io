@@ -22,10 +22,8 @@ layout: default
   <div class="home-heading" {{ home_img_background_style }}>
     {{ home_img_tag }}
     <div class="home-heading-message">
-      
       {%- if site.data.owner[lng].home.top_header_line2 %}
         <br>
-
       {% endif -%}
     </div>
   </div>
@@ -57,7 +55,7 @@ layout: default
   <div class="row">
     <div class="col-md-12">
       <div class="about-msg markdown-style">
-        {{ site.ai_md }}
+        {{ tabs/AI.md }}
       </div>
     </div>
   </div>
