@@ -41,7 +41,6 @@ layout: default
     <div class="col-md-9 about-header">
       <h1 translate="no"><a href="https://simonedebonis.github.io/dla">Deep Learning Algorithms</a></h1>
       <div class="meta-container">
-        {%- assign about_title = site.data.owner[lng].about.sub_title | replace: site.data.conf.main.sample_replace, site.data.lang[lng].constants.sample -%}
           <p class="sub-title">
             <i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>
             &nbsp;{{ page.ai }}
@@ -54,7 +53,7 @@ layout: default
   </div>
   <div class="row">
     <div class="col-md-12">
-      <div class="about-msg markdown-style">
+      <div class="home-intro-text markdown-style">
         {{ tabs.work.AI  }}
       </div>
     </div>
