@@ -36,7 +36,7 @@ layout: default
   </div>
 </div>
 
-{%- if lng_pages.size > 0 and site.data.conf.others.home.new_posts %}
+
 <div class="multipurpose-container new-posts-container">
   <h1>{{ site.data.lang[lng].home.new_posts_title }}</h1>
   <ul class="new-posts">
@@ -56,16 +56,16 @@ layout: default
     </li>
   </ul>
 </div>
-{% endif -%}
 
-{%- if lng_pages.size > 0 and site.data.conf.others.home.new_posts %}
+
+
 <div class="multipurpose-container new-posts-container">
   <h1>{{ site.data.lang[lng].home.new_projects_title}}</h1>
   <ul class="new-posts">
-  <a href="https://simonedebonis.github.io/dsa/"> Data science Algorithms </a>
-  <a href="https://simonedebonis.github.io/tsa/"> Time Series Analysis </a>
+  <a href="https://simonedebonis.github.io/dsa/"> Data science Algorithms </a> <br />
+  <a href="https://simonedebonis.github.io/tsa/"> Time Series Analysis </a> <br />
   <a href="https://simonedebonis.github.io/dla/"> Deep Learning Algorithms </a>
   </ul>
 </div>
-{% endif -%}
+
 
