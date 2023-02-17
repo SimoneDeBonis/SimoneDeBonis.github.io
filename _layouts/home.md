@@ -34,6 +34,7 @@ layout: default
 </div>
 
 {%- assign lng = get_lng -%}
+{%- assign content1 = tabs.work.AI -%}
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
@@ -55,7 +56,7 @@ layout: default
   <div class="row">
     <div class="col-md-12">
       <div class="home-intro-text markdown-style">
-        "prova"
+        {{content1}}
       </div>
     </div>
   </div>
