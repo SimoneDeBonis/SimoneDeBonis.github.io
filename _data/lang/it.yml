@@ -149,7 +149,7 @@ about:
   email_title: email
 
 # for links layout
-CV:
+links:
   title: CV
   button_name: CV
   link_text: 
