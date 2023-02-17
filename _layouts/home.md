@@ -46,7 +46,7 @@ layout: default
       <div class="meta-container">
           <p class="sub-title">
             <i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>
-            &nbsp;{{ page.ai }}
+            &nbsp;{{ lng }}
           </p>
       </div>
     </div>
