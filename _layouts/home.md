@@ -37,14 +37,14 @@ layout: default
 </div>
 
 
-<div class="row clearfix">
-    <div class="Project" {{ home_img_background_style }}>
+<div class="multipurpose-container home-heading-container">
+    <div class="home-heading" {{ home_img_background_style }}>
         <a href="https://simonedebonis.github.io/dsa/"> Data science Algorithms </a> 
     </div>
-    <div class="Project" {{ home_img_background_style }}>
+    <div class="home-heading" {{ home_img_background_style }}>
         <a href="https://simonedebonis.github.io/tsa/"> Time Series Analysis </a> 
     </div>
-    <div class="Project" {{ home_img_background_style }}>
+    <div class="home-heading" {{ home_img_background_style }}>
         <a href="https://simonedebonis.github.io/dla/"> Deep Learning Algorithms </a>
     </div>
 </div>
