@@ -41,7 +41,9 @@ img_ai: ":Ai.jpg"
 
 # {{ website_info_text_second }}
 
-prova: "prova"
+ai: "implemented with Pytorch"
+time: "From ARMA to modern techniques"
+ML: "explained in details with math and Numpy"
 ---
 
 ### Hello!

@@ -47,7 +47,7 @@ layout: default
         {%- if site.data.owner[lng].about.sub_title %}
           <p class="sub-title">
             <i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>
-            &nbsp;{{ page.prova }}
+            &nbsp;{{ page.ai }}
           </p>
         {% endif -%}
       </div>
@@ -59,7 +59,7 @@ layout: default
   <div class="row">
     <div class="col-md-12">
       <div class="about-msg markdown-style">
-        {{ content }}
+        {{ tabs.AI.content }}
       </div>
     </div>
   </div>
