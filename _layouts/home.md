@@ -36,14 +36,27 @@ layout: default
   </div>
 </div>
 
-<div class="multipurpose-container new-posts-container">
-  <h1>{{ site.data.lang[lng].home.new_projects_title}}</h1>
-  <ul class="new-posts">
-  <b><a href="https://simonedebonis.github.io/dsa/"> Data science Algorithms </a> </b>
-  <b><a href="https://simonedebonis.github.io/tsa/"> Time Series Analysis </a> </b>
-  <b><a href="https://simonedebonis.github.io/dla/"> Deep Learning Algorithms </a></b>
-  </ul>
+
+<div class="row clearfix">
+    <div class="Project" {{ home_img_background_style }}>
+        <a href="https://simonedebonis.github.io/dsa/"> Data science Algorithms </a> 
+    </div>
+    <div class="Project" {{ home_img_background_style }}>
+        <a href="https://simonedebonis.github.io/tsa/"> Time Series Analysis </a> 
+    </div>
+    <div class="Project" {{ home_img_background_style }}>
+        <a href="https://simonedebonis.github.io/dla/"> Deep Learning Algorithms </a>
+    </div>
 </div>
+
+
+
+
+
+
+
+
+
 
 <div class="multipurpose-container new-posts-container">
   <h1>{{ site.data.lang[lng].home.new_posts_title }}</h1>
