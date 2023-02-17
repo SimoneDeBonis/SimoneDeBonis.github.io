@@ -35,10 +35,11 @@ layout: default
 </div>
 
 {%- assign lng = get_lng -%}
+{%- capture home_img_ai -%} style="background-image:url('{{ page.img_ai }}');" {%- endcapture -%}
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
-      <img src="{{ page.img_ai }}" alt="">
+      <img src="{{ home_img_ai }}" alt="">
     </div>
     <div class="col-md-9 about-header">
       <h1 translate="no">{{ site.data.owner[lng].brand }}</h1>
