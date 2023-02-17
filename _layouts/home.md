@@ -33,7 +33,7 @@ layout: default
 </div>
 
 {%- assign lng = get_lng -%}
-{% capture AI %}{% include _data/work/AI.md %}{% endcapture %}
+{% capture AI %}{% include site.data.work.AI.content %}{% endcapture %}
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
@@ -56,7 +56,7 @@ layout: default
   <div class="row">
     <div class="col-md-12">
       <div class="about-msg markdown-style">
-        {{ AI.content  }}
+        {{ content  }}
       </div>
     </div>
   </div>
