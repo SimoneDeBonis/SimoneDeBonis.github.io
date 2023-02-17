@@ -34,7 +34,7 @@ layout: default
 </div>
 
 {%- assign lng = get_lng -%}
-{%- assign content1 = tabs.work.AI -%}
+{%- assign content1 = tabs.work.AI.md.content -%}
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
