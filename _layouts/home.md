@@ -28,7 +28,7 @@ layout: default
     </div>
   </div>
   <div class="home-intro-text markdown-style">
-    {{ content }}
+    {{ tabs.work.AI.content  }}
   </div>
 </div>
 
@@ -54,7 +54,7 @@ layout: default
   <div class="row">
     <div class="col-md-12">
       <div class="home-intro-text markdown-style">
-        {{ tabs.work.AI.content  }}
+        {{ content  }}
       </div>
     </div>
   </div>
