@@ -37,27 +37,6 @@ layout: default
 </div>
 
 
-<div class="multipurpose-container home-heading-container">
-    <div class="home-heading" {{ home_img_background_style }}>
-        <a href="https://simonedebonis.github.io/dsa/"> Data science Algorithms </a> 
-    </div>
-    <div class="home-heading" {{ home_img_background_style }}>
-        <a href="https://simonedebonis.github.io/tsa/"> Time Series Analysis </a> 
-    </div>
-    <div class="home-heading" {{ home_img_background_style }}>
-        <a href="https://simonedebonis.github.io/dla/"> Deep Learning Algorithms </a>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
 <div class="multipurpose-container new-posts-container">
   <h1>{{ site.data.lang[lng].home.new_posts_title }}</h1>
   <ul class="new-posts">

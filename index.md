@@ -49,4 +49,11 @@ I'm Simone, a Data Science student from Italy passionate about Artifficial Intel
 - Machine Learning applied to Root Cause Analysis in the automotive industry, this is my university thesis;
 - Machine Learning applied to Cybersecurity to prevent intrusions in a server.
 
+## Active Projects:
 
+
+
+[Data Science Algorithms](https://simonedebonis.github.io/dsa)
+[Time Series Analysis](https://simonedebonis.github.io/tsa)
+[Deep Learning Algorithms](https://simonedebonis.github.io/dla)
+ 
