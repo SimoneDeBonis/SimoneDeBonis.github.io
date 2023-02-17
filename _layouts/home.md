@@ -35,20 +35,19 @@ layout: default
 </div>
 
 {%- assign lng = get_lng -%}
-{%- capture home_img_ai -%} style="background-image:url('{{ page.img_ai }}');" {%- endcapture -%}
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
       <img src="assets/img/home/AI.jpg" alt="">
     </div>
     <div class="col-md-9 about-header">
-      <h1 translate="no">{{ site.data.owner[lng].brand }}</h1>
+      <h1 translate="no">Deep Learning Algorithms</h1>
       <div class="meta-container">
         {%- assign about_title = site.data.owner[lng].about.sub_title | replace: site.data.conf.main.sample_replace, site.data.lang[lng].constants.sample -%}
         {%- if site.data.owner[lng].about.sub_title %}
           <p class="sub-title">
-            {%- if site.data.conf.others.about.sub_title_icon %}<i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>{% endif -%}
-            &nbsp;{{ about_title }}
+            <i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>
+            &nbsp;{{ page.prova }}
           </p>
         {% endif -%}
       </div>
