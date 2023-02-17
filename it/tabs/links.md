@@ -1,7 +1,7 @@
 ---
 layout: CV
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
-lng_pair: id_cv
+lng_pair: id_links
 
 # publish date (used for seo)
 # if not specified, site.time will be used.

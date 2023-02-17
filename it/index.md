@@ -37,9 +37,18 @@ img: ":home-heading.jpg"
 #published: false
 ---
 
-{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
+### Hello!
 
-{%- include util/auto-content-generator.liquid -%}
-{{ website_info_text_first }}
+I'm Simone, a Data Science student from Italy passionate about Artifficial Intelligence and aerospace
 
-{{ website_info_text_second }}
+## What I'm working on: 
+- Machine Learning applied to Root Cause Analysis in the automotive industry, this is my university thesis;
+- Machine Learning applied to Cybersecurity to prevent intrusions in a server.
+
+## Active Projects:
+
+
+
+[Data Science Algorithms](https://simonedebonis.github.io/dsa)
+[Time Series Analysis](https://simonedebonis.github.io/tsa)
+[Deep Learning Algorithms](https://simonedebonis.github.io/dla)
