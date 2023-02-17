@@ -1,6 +1,6 @@
 --- 
-layout: "about"
-lng_pair: id_about
+layout: "home"
+lng_pair: id_ai
 
 #img: ":about.jpg"
 
