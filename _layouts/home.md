@@ -57,13 +57,67 @@ layout: default
   <div class="row">
     <div class="col-md-12">
       <div class="home-intro-text markdown-style">
-        {{ content1.content | markdownify }}
+        {{ content1 | markdownify }}
       </div>
     </div>
   </div>
 </div>
 
+{% capture content2 %}{% include work/ML.md %}{% endcapture %}
+<div class="multipurpose-container about-container">
+  <div class="row about-main">
+    <div class="col-md-3 about-img">
+      <img src="assets/img/home/ML.jpg" alt="">
+    </div>
+    <div class="col-md-9 about-header">
+      <h1 translate="no"><a href="https://simonedebonis.github.io/dsa">Data Science Algorithms</a></h1>
+      <div class="meta-container">
+          <p class="sub-title">
+            <i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>
+            &nbsp;{{ page.ml }}
+          </p>
+      </div>
+    </div>
+  </div>
+  <div class="row about-divider">
+    <hr>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="home-intro-text markdown-style">
+        {{ content2 | markdownify }}
+      </div>
+    </div>
+  </div>
+</div>
 
+{% capture content3 %}{% include work/TS.md %}{% endcapture %}
+<div class="multipurpose-container about-container">
+  <div class="row about-main">
+    <div class="col-md-3 about-img">
+      <img src="assets/img/home/TS.jpg" alt="">
+    </div>
+    <div class="col-md-9 about-header">
+      <h1 translate="no"><a href="https://simonedebonis.github.io/tsa">Time Series Analysis</a></h1>
+      <div class="meta-container">
+          <p class="sub-title">
+            <i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>
+            &nbsp;{{ page.ts }}
+          </p>
+      </div>
+    </div>
+  </div>
+  <div class="row about-divider">
+    <hr>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="home-intro-text markdown-style">
+        {{ content3 | markdownify }}
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="multipurpose-container new-posts-container">
   <h1>{{ site.data.lang[lng].home.new_posts_title }}</h1>
