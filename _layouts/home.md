@@ -39,9 +39,9 @@ layout: default
 <div class="multipurpose-container new-posts-container">
   <h1>{{ site.data.lang[lng].home.new_projects_title}}</h1>
   <ul class="new-posts">
-  <h3><a href="https://simonedebonis.github.io/dsa/"> Data science Algorithms </a> </h3>
-  <h3><a href="https://simonedebonis.github.io/tsa/"> Time Series Analysis </a> </h3>
-  <h3><a href="https://simonedebonis.github.io/dla/"> Deep Learning Algorithms </a></h3>
+  <b><a href="https://simonedebonis.github.io/dsa/"> Data science Algorithms </a> </b>
+  <b><a href="https://simonedebonis.github.io/tsa/"> Time Series Analysis </a> </b>
+  <b><a href="https://simonedebonis.github.io/dla/"> Deep Learning Algorithms </a></b>
   </ul>
 </div>
 
