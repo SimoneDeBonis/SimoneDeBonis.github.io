@@ -33,7 +33,7 @@ layout: default
 </div>
 
 {%- assign lng = get_lng -%}
-{% capture AI %}{% include site.data.work.AI.content %}{% endcapture %}
+{% capture AI %}{% include site.tabs.work.AI.content %}{% endcapture %}
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
