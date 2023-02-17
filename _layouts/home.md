@@ -57,7 +57,7 @@ layout: default
   <div class="row">
     <div class="col-md-12">
       <div class="home-intro-text markdown-style">
-        {{ content1 | markdownify }}
+        {{ content1.content | markdownify }}
       </div>
     </div>
   </div>
