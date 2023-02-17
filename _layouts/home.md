@@ -63,7 +63,7 @@ layout: default
   </div>
 </div>
 
-{% capture content2 %}{% include work/[lng]/ML.md %}{% endcapture %}
+{% capture content2 %}{% include work/{{lng}}/ML.md %}{% endcapture %}
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
@@ -91,7 +91,7 @@ layout: default
   </div>
 </div>
 
-{% capture content3 %}{% include work/TS.md %}{% endcapture %}
+{% capture content3 %}{% include work/{{lng}}/TS.md %}{% endcapture %}
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
