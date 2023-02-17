@@ -56,7 +56,7 @@ layout: default
   <div class="row">
     <div class="col-md-12">
       <div class="home-intro-text markdown-style">
-        {{content1}}
+        {{tabs.work.AI.md.content}}
       </div>
     </div>
   </div>
