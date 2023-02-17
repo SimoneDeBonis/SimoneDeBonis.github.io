@@ -134,6 +134,7 @@ home:
   button_name: Home
   new_posts_title: New Articles
   new_posts_show_more_button: View More ...
+  new_projects_title: Recent Projects
 
 # for archives layout
 archives:
