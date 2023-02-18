@@ -35,7 +35,11 @@ layout: default
 </div>
 
 {%- assign lng = get_lng -%}
-{% capture content1 %}{% include work/AI_{{lng}}.md %}{% endcapture %}
+%- if lng == "en" %}
+  {% capture content1 %}{% include work/AI_en.md %}{% endcapture %}
+{% else %}
+  {% capture content1 %}{% include work/AI_it.md %}{% endcapture %}
+{% endif -%}
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
