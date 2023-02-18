@@ -35,20 +35,20 @@ img: ":home-heading.jpg"
 # to disable this page, simply set published: false or delete this file
 # don't forget that this is root index.html. If you disable this, there will be no index.html page to open
 #published: false
+ai: "implementati con Pytorch"
+time: "Da ARMA alle tecniche recenti"
+ML: "approfonditi in dettaglio con matematica e Numpy"
 ---
 
-### Hello!
+### Ciao!
 
-I'm Simone, a Data Science student from Italy passionate about Artifficial Intelligence and aerospace
+Mi chiamo Simone, sono uno studente di Data Science appassionato di intelligenza artificiale e aerospazio.
 
-## What I'm working on: 
-- Machine Learning applied to Root Cause Analysis in the automotive industry, this is my university thesis;
-- Machine Learning applied to Cybersecurity to prevent intrusions in a server.
+## A cosa sto lavorando: 
+- Tesi di laurea: utilizzare techinche di machine learning in contesto Root-Cause-Analysis nel settore automotive;
+- Utilizzare tecniche di machine learning in contesto time series per prevenire comportamenti malevoli in ambito cybersecurity.
 
-## Active Projects:
+## Progetti in cantiere:
 
 
 
-[Data Science Algorithms](https://simonedebonis.github.io/dsa)
-[Time Series Analysis](https://simonedebonis.github.io/tsa)
-[Deep Learning Algorithms](https://simonedebonis.github.io/dla)

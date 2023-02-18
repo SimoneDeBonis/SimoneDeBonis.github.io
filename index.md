@@ -44,9 +44,6 @@ img_ai: ":Ai.jpg"
 ai: "implemented with Pytorch"
 time: "From ARMA to modern techniques"
 ML: "explained in details with math and Numpy"
-
-ai_md: "## this is a heading 
-casmvopesdnm"
 ---
 
 ### Hello!
@@ -60,9 +57,5 @@ I'm Simone, a Data Science student from Italy passionate about Artifficial Intel
 ## Active Projects:
 
 
-
-[Data Science Algorithms](https://simonedebonis.github.io/dsa)
-[Time Series Analysis](https://simonedebonis.github.io/tsa)
-[Deep Learning Algorithms](https://simonedebonis.github.io/dla)
  
  

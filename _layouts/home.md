@@ -45,7 +45,7 @@ layout: default
       <div class="meta-container">
           <p class="sub-title">
             <i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>
-            &nbsp;{{ page.ml }}
+            &nbsp;{{ page.ML }}
           </p>
       </div>
     </div>
@@ -74,7 +74,7 @@ layout: default
       <div class="meta-container">
           <p class="sub-title">
             <i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>
-            &nbsp;{{ lng }}
+            &nbsp;{{ page.ai }}
           </p>
       </div>
     </div>
@@ -104,7 +104,7 @@ layout: default
       <div class="meta-container">
           <p class="sub-title">
             <i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>
-            &nbsp;{{ page.ts }}
+            &nbsp;{{ page.time }}
           </p>
       </div>
     </div>
