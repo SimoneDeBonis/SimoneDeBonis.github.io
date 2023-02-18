@@ -34,7 +34,7 @@ layout: default
   </div>
 </div>
 
-{%- assign lng = get_lng -%}
+
 {%- if lng == "en" %}
   {% capture content1 %}{% include work/AI_en.md %}{% endcapture %}
 {% else %}
