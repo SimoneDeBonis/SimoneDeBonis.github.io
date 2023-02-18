@@ -39,7 +39,7 @@ layout: default
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
-      <img src="assets/img/home/AI.jpg" alt="">
+      <img src=":AI.jpg" alt="">
     </div>
     <div class="col-md-9 about-header">
       <h1 translate="no"><a href="https://simonedebonis.github.io/dla">Deep Learning Algorithms</a></h1>
@@ -67,7 +67,7 @@ layout: default
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
-      <img src=":assets/img/home/ML.jpg" alt="">
+      <img src=":ML.jpg" alt="">
     </div>
     <div class="col-md-9 about-header">
       <h1 translate="no"><a href="https://simonedebonis.github.io/dsa">Data Science Algorithms</a></h1>
@@ -95,7 +95,7 @@ layout: default
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
-      <img src="assets/img/home/TS.jpg" alt="">
+      <img src=":TS.jpg" alt="">
     </div>
     <div class="col-md-9 about-header">
       <h1 translate="no"><a href="https://simonedebonis.github.io/tsa">Time Series Analysis</a></h1>
