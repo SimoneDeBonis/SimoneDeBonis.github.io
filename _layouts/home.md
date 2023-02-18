@@ -46,7 +46,7 @@ layout: default
       <div class="meta-container">
           <p class="sub-title">
             <i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>
-            &nbsp;{{ lng }}
+            &nbsp;{{ page.ai }}
           </p>
       </div>
     </div>
@@ -67,7 +67,7 @@ layout: default
 <div class="multipurpose-container about-container">
   <div class="row about-main">
     <div class="col-md-3 about-img">
-      <img src="assets/img/home/ML.jpg" alt="">
+      <img src=":assets/img/home/ML.jpg" alt="">
     </div>
     <div class="col-md-9 about-header">
       <h1 translate="no"><a href="https://simonedebonis.github.io/dsa">Data Science Algorithms</a></h1>
