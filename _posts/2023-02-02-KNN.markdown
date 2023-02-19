@@ -46,11 +46,12 @@ date: 2023-01-27 11:32:53 +0900
 
 {{ website_info_text_first }}
 
+
+
+- A more in depth version with code of KNN is available [here](https://simonedebonis.github.io/dsa/KNN.html)
+- To better understand KNN revise the [Bayes classifier](https://simonedebonis.github.io/posts/2023-01-27-Bayes_Classifier) first. 
+
 "If it walks like a duck, quacks like a duck, then it's probably a duck"
-
-A more in depth version with code of KNN is available [here](https://simonedebonis.github.io/dsa/KNN.html)
-
-To better understand KNN revise the [Bayes classifier](https://simonedebonis.github.io/posts/2023-01-27-Bayes_Classifier) first. 
 
 Given a region of space L(X) centered on X, of volume v, the probability is approximable as p(X)v and can be estimated as:
 <p style="text-align: center;">$$
