@@ -48,6 +48,8 @@ date: 2023-01-27 11:32:53 +0900
 
 "If it walks like a duck, quacks like a duck, then it's probably a duck"
 
+A more in depth version with code of KNN is available (here)[https://simonedebonis.github.io/dsa/KNN.html]
+To better understand KNN revise the (bayes classifier)[https://simonedebonis.github.io/posts/2023-01-27-Bayes_Classifier] first. 
 
 Given a region of space L(X) centered on X, of volume v, the probability is approximable as p(X)v and can be estimated as:
 <p style="text-align: center;">$$
@@ -104,7 +106,7 @@ Irrelevant attributes add noise to the proximity measure, redundant attributes b
 Memory based learner, lazy because doesn't create a synthetic model, easy to implement, no training cost but for bigger models the cost of classification is quite high.
 
 
-Improving KNN efficiency:
+## Improving KNN efficiency:
 
 - Avoiding having to compute distance to all objects in the training set: Multi-dimensional access methods(k-d trees), Fast Approximate similarity search, locality sensitive hashing (LSH);
 - Condensing: determine a smaller set of objects that five the same performance;
