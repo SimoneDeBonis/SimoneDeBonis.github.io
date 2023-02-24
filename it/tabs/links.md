@@ -90,7 +90,7 @@ page_data:
 
     - type: id_formazione
       title: "Applicazioni di Deep Learning"
-      url: ""
+      url: 
       info: ""
       date: "IFOA, 60 ore"
 
