@@ -1,5 +1,7 @@
 
 
-## Questa è una prova ancora
+## The Plan:
 
-en
+- Regression Methods (OLS,Logistic,Ridge,Lasso...)
+- Classification (Decision Trees, SVM, KNN...)
+- Clustering (K-means, DBScan, SOM...)

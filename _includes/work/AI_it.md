@@ -1,5 +1,8 @@
 
 
-## Questa è una prova ultima
+## Il piano:
 
-it
+- Modelli base (perceptron, MLP)
+- Convolution 
+- Sequence Modeling (RNN, LSTM, Transformer)
+- Reinforcement Learning
