@@ -82,19 +82,19 @@ page_data:
     # Formazione
     - type: id_formazione
       title: "Artificial Intelligence & Machine Learning"
-      url: ""
+      url: "https://app.myopenbadge.com/receive/FvZtgrxBNEc-6e7e1bc881c70fd0eeed0ab7f35f3b0c-d3m8KeZqx-51641983520/heIx-44b5361112e0b13a7cb64e3e1a062ef0-lqmF5u7A-8/public"
       info: ""
       date: "IFOA, 60 hours"
 
     - type: id_formazione
       title: "Deep Learning applications"
-      url: ""
+      url: "https://app.myopenbadge.com/receive/FvZtgrxBNEc-6e7e1bc881c70fd0eeed0ab7f35f3b0c-d3m8KeZqx-51641983520/BiIfnvezJ-0034b39650acd254eb26916bcabc6800-3cUvBJxMthsm-2/public"
       info: ""
       date: "IFOA, 60 hours"
 
     - type: id_formazione
       title: "Marketing Analytics & Business Intelligence"
-      url: ""
+      url: "https://app.myopenbadge.com/receive/FvZtgrxBNEc-6e7e1bc881c70fd0eeed0ab7f35f3b0c-d3m8KeZqx-51641983520/grhHFS-9be5fb854c73a297d744009314116fbc-9NvfF3GcXQ-2/public"
       info: ""
       date: "Forpin, 120 hours"
 
