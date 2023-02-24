@@ -13,7 +13,7 @@ layout: default
 
 <div class="multipurpose-container links-heading-container">
   <h1>{{ links_data.main.header | default: "links" }}</h1>
-  <p href="{{links_data.main.pdf }}">{{ links_data.main.info }}</p>
+  <a href="{{links_data.main.pdf }}">{{ links_data.main.info }}</a>
   <div class="multipurpose-button-wrapper">
     {%- for category in links_data.category %}
       <a href="#{{ category.type }}" role="button" class="multipurpose-button link-buttons" style="background-color:{{ category.color }};">{{ category.title }}</a>
