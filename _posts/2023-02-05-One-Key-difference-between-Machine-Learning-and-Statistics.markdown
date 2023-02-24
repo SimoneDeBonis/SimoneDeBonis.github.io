@@ -11,7 +11,7 @@ category: auto generated
 # multiple tag entries are possible
 tags: [Theory, test]
 # thumbnail image for post
-img: ":post_pic2.jpg"
+img: ":MLvsStat.jpg"
 # disable comments on this page
 comments_disable: true
 

@@ -40,7 +40,7 @@ layout: default
             {%- if list.url != "" %}
             <a class="text-capitalize" href = "{{list.url}}">{{ list.title }}</a>
             {% else %}
-            <a class="text-capitalize">{{ list.title }}</a>
+            <p class="text-capitalize">{{ list.title }}</p>
             {% endif -%}
           </td>
           <td>
