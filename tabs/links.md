@@ -43,6 +43,7 @@ page_data:
   main:
     header: "Curriculum Vitae"
     info: "Your Links page description."
+    pdf: 
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:

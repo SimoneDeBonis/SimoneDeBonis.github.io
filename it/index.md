@@ -45,8 +45,8 @@ ML: "approfonditi in dettaglio con matematica e Numpy"
 Mi chiamo Simone, sono uno studente di Data Science appassionato di intelligenza artificiale e aerospazio.
 
 ## A cosa sto lavorando: 
-- Tesi di laurea: utilizzare techinche di machine learning in contesto Root-Cause-Analysis nel settore automotive;
-- Utilizzare tecniche di machine learning in contesto time series per prevenire comportamenti malevoli in ambito cybersecurity.
+- Tesi di laurea: utilizzo di techinche di machine learning in contesto Root-Cause-Analysis;
+- Utilizzo di tecniche di machine learning in contesto time series per prevenire comportamenti malevoli in ambito cybersecurity.
 
 ## Progetti in cantiere:
 
