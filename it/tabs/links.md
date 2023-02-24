@@ -84,7 +84,7 @@ page_data:
     # Formazione
     - type: id_formazione
       title: "Artificial Intelligence & Machine Learning"
-      url: "www.google.it"
+      url: "https://app.myopenbadge.com/receive/FvZtgrxBNEc-6e7e1bc881c70fd0eeed0ab7f35f3b0c-d3m8KeZqx-51641983520/heIx-44b5361112e0b13a7cb64e3e1a062ef0-lqmF5u7A-8/public"
       info: ""
       date: "IFOA, 60 ore"
 
