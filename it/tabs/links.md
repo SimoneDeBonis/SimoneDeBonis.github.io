@@ -84,7 +84,7 @@ page_data:
     # Formazione
     - type: id_formazione
       title: "Artificial Intelligence & Machine Learning"
-      url: ""
+      url: "www.google.it"
       info: ""
       date: "IFOA, 60 ore"
 

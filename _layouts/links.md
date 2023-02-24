@@ -38,7 +38,7 @@ layout: default
         {%- if list.type != category.type %}{% continue %}{% endif -%}
         <tr class="link-item" {{ link_onclick }}>
           <td>
-            <p class="text-capitalize" href = "loc">{{ list.title }}</p>
+            <a class="text-capitalize" href = "{{list.url}}">{{ list.title }}</a>
           </td>
           <td>
             <p class="text-capitalize">{{ list.info }}</p>
