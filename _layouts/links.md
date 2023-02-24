@@ -21,7 +21,6 @@ layout: default
   </div>
 </div>
 
-{%- if site.data.conf.others.links.use_rows_as_link -%}{%- assign hover_class = "table-hover" -%}{%- endif -%}
 {%- for category in links_data.category %}
 <div class="multipurpose-container link-container" id="{{ category.type }}" style="border-left-color:{{ category.color }};">
   <h2>{{ category.title }}</h2>
@@ -38,7 +37,7 @@ layout: default
         {%- if list.type != category.type %}{% continue %}{% endif -%}
         <tr class="link-item" {{ link_onclick }}>
           <td>
-            <a class="text-capitalize" href = "{{list.url}}">{{ list.title }}</a>
+            <a class="text-capitalize" href = "{{list.prova}}">{{ list.title }}</a>
           </td>
           <td>
             <p class="text-capitalize">{{ list.info }}</p>
