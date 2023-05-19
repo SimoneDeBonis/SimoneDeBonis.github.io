@@ -42,8 +42,8 @@ lng_pair: id_links
 page_data:
   main:
     header: "Curriculum Vitae"
-    info: "Scarica il pdf qui."
-    pdf: "https://github.com/SimoneDeBonis/SimoneDeBonis.github.io/raw/main/assets/pdf/CV_Simone_De_Bonis_ita.pdf"
+    info: "Scarica il PDF qui."
+    pdf: "raw/main/assets/pdf/CV_Simone_De_Bonis_ita.pdf"
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:

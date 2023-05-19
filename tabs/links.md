@@ -42,7 +42,7 @@ lng_pair: id_links
 page_data:
   main:
     header: "Curriculum Vitae"
-    info: "Your Links page description."
+    info: "Download PDF."
     pdf: "assets/pdf/CV_Simone_De_Bonis_ita.pdf"
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
