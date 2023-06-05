@@ -42,7 +42,7 @@ lng_pair: id_links
 page_data:
   main:
     header: "Curriculum Vitae"
-    info: "Scarica il PDF qui."
+    info: "PDF disponibile qui"
     pdf: "raw/main/assets/pdf/CV_Simone_De_Bonis_ita.pdf"
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
@@ -51,13 +51,15 @@ page_data:
       type: id_istruzione
       color: "#2C74B3"
 
+    - title: "Esperienza"
+      type: id_programming
+      color: "#5BC0F8"
+
     - title: "Formazione"
       type: id_formazione
       color: "#0081C9"
 
-    - title: "Esperienza"
-      type: id_programming
-      color: "#5BC0F8"
+    
 
   list:
 
@@ -78,7 +80,7 @@ page_data:
     - type: id_istruzione
       title: "Liceo Scientifico"
       url: ""
-      info: "Liquid for Designers wiki on GitHub"
+      info: "interessi principali fisica e informatica"
       date: "2012-2017, Ferrara"
 
     # Formazione
@@ -103,7 +105,14 @@ page_data:
     -
     # Esperienza
     - type: id_programming
-      title: "Stack OverFlow"
+      title: "Tirocinio di ricerca"
       url: ""
-      info: "Stack Overflow is a question and answer website for professional and enthusiastic programmers."
+      info: ""
+      date: "Aprile 2023, UNIVPM"
+
+    - type: id_programming
+      title: "Freelancer"
+      url: ""
+      info: ""
+      date: "Aprile 2023"
 ---

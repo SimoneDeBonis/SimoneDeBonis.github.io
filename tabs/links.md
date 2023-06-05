@@ -50,14 +50,16 @@ page_data:
     - title: "Education"
       type: id_istruzione
       color: "#2C74B3"
+    
+    - title: "Experience"
+      type: id_programming
+      color: "#5BC0F8"
 
     - title: "Courses"
       type: id_formazione
       color: "#0081C9"
 
-    - title: "Experience"
-      type: id_programming
-      color: "#5BC0F8"
+    
 
   list:
     # istruzione
@@ -76,7 +78,7 @@ page_data:
     - type: id_istruzione
       title: "Liceo Scientifico"
       url: ""
-      info: "Liquid for Designers wiki on GitHub"
+      info: "Main focus on physics and computer science"
       date: "2012-2017, Ferrara"
 
     # Formazione
@@ -101,7 +103,13 @@ page_data:
     -
     # Esperienza
     - type: id_programming
-      title: "Stack OverFlow"
+      title: "Research internship"
       url: ""
-      info: "Stack Overflow is a question and answer website for professional and enthusiastic programmers."
+      info: ""
+      date: "april 2023, UNIVPM"
+    - type: id_programming
+      title: "Freelancer"
+      url: ""
+      info: ""
+      date: "april"
 ---
