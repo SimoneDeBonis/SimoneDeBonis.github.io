@@ -38,8 +38,8 @@ img: ":about.jpg"
 
 {%- comment -%} Please delete below and place your page content here {%- endcomment -%}
 
-Ciao provo a scrivere qui 
+
 
 {{ website_info_text_second }}
 
-cosa succede se scrivo qui invece?
+

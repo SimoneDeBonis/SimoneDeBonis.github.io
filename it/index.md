@@ -42,7 +42,7 @@ ML: "approfonditi in dettaglio con matematica e Numpy"
 
 ### Ciao!
 
-Mi chiamo Simone, sono uno studente di Data Science appassionato di intelligenza artificiale e aerospazio.
+Sono Simone, uno studente di Data Science appassionato di intelligenza artificiale, sicurezza informatica e aerospazio.
 
 ## A cosa sto lavorando: 
 - Tesi di laurea: utilizzo di techinche di machine learning in contesto Root-Cause-Analysis;

@@ -48,13 +48,13 @@ ML: "explained in details with math and Numpy"
 
 ### Hello!
 
-I'm Simone, a Data Science student from Italy passionate about Artifficial Intelligence and aerospace
+I'm Simone, a Data Science student from Italy passionate about Artifficial Intelligence, cybersecurity and aerospace
 
 ## What I'm working on: 
 - Machine Learning applied to Root Cause Analysis in the automotive industry, this is my university thesis;
 - Machine Learning applied to Cybersecurity to prevent intrusions in a server.
 
-## Active Projects:
+## Working Projects:
 
 
  
