@@ -43,7 +43,7 @@ page_data:
   main:
     header: "Curriculum Vitae"
     info: "Download PDF."
-    pdf: "raw/main/assets/pdf/CV_Simone_De_Bonis_eng.pdf"
+    pdf: "https://github.com/SimoneDeBonis/SimoneDeBonis.github.io/raw/main/assets/pdf/CV_Simone_De_Bonis_eng.pdf"
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:
