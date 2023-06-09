@@ -42,11 +42,14 @@ ML: "approfonditi in dettaglio con matematica e Numpy"
 
 ### Ciao!
 
-Sono Simone, uno studente di Data Science appassionato di intelligenza artificiale, sicurezza informatica e aerospazio.
+Sono Simone, uno studente di Data Science appassionato di Intelligenza Artificiale, Sicurezza Informatica ed Aerospazio.
 
 ## A cosa sto lavorando: 
-- Tesi di laurea: utilizzo di techinche di machine learning in contesto Root-Cause-Analysis;
-- Utilizzo di tecniche di machine learning in contesto time series per prevenire comportamenti malevoli in ambito cybersecurity.
+- Tesi di laurea: Sto applicando tecniche di apprendimento automatico ai dati telemetrici per comprendere e prevenire guasti nell'industria automotive;
+- Project Work nel contesto del (Big Data Lab)[https://www.bigdata-lab.it/]: Ho utilizzato tecniche avanzate di machine learning per la rilevazione di anomalie multivariate in dati di serie storiche ottenuti dai log del server, opportunamente preprocessati.
+- Progetto universitario: Ho collaborato con i miei colleghi nello sviluppo di un sistema di early warning utilizzando Support Vector Machine e Multi-Layer Perceptron per prevenire default nei comuni italiani.
+
+Grazie per la visita e se hai domande o feedback, non esitare a contattarmi, molte parti sono ancora in fase di sviluppo. Buona navigazione!
 
 ## Progetti in cantiere:
 
