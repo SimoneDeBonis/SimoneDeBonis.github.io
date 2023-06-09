@@ -51,9 +51,9 @@ ML: "explained in details with math and Numpy"
 I'm Simone, a Data Science student from Italy passionate about Artifficial Intelligence, Cybersecurity and Aerospace
 
 ## What I'm working on: 
-- University thesis: I'm applying machine learning techniques to telemetry data to understand and prevent faults in the automotive industry.
-- Project Work in the context of the (big data lab)[https://www.bigdata-lab.it/]: I've utilized advanced machine learning techniques for multivariate anomaly detection of time series data obtained from server logs, properly preprocessed.
-- University Project: I have collaborated with my colleagues to develop an early warning system using Support Vector Machine and Multi-Layer Perceptron models to prevent defaults in Italian municipalities.
+- **University thesis**: I'm applying machine learning techniques to telemetry data to understand and prevent faults in the automotive industry.
+- **Project Work** in the context of the [big data lab](https://www.bigdata-lab.it): I've utilized advanced machine learning techniques for multivariate anomaly detection of time series data obtained from server logs, properly preprocessed.
+- **University Project**: I have collaborated with my colleagues to develop an early warning system using Support Vector Machine and Multi-Layer Perceptron models to prevent defaults in Italian municipalities.
 
 Thank you for visiting, and if you have any questions or feedback, please feel free to contact me. Many parts are still a work in progress. Enjoy your browsing!
 
