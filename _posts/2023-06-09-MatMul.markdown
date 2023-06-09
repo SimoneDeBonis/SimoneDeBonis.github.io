@@ -11,12 +11,12 @@ category: auto generated
 # multiple tag entries are possible
 tags: [Math, example post]
 # thumbnail image for post
-img: "matrix.png"
+img: "matrix.jpg"
 # disable comments on this page
 comments_disable: true
 
 # publish date
-date: 2023-06-10 14:47:12 +0900
+date: 2023-06-09 14:47:12 +0900
 
 # seo
 # if not specified, date will be used.
