@@ -11,7 +11,7 @@ category: auto generated
 # multiple tag entries are possible
 tags: [Math, example post]
 # thumbnail image for post
-img: "matrix.jpg"
+img: ":matrix.jpg"
 # disable comments on this page
 comments_disable: true
 
@@ -45,7 +45,11 @@ date: 2023-06-09 14:47:12 +0900
 
 <!-- outline-start -->
 
-{{ website_info_text_first }}
+## References 
+
+[1] Fawzi, A., Balog, M., Huang, A. et al. Discovering faster matrix multiplication algorithms with reinforcement learning. Nature 610, 47–53 (2022). https://doi.org/10.1038/s41586-022-05172-4
+
+[2]  Manuel Kauers and Jakob Moosbauer. The FBHHRBNRSSSHK-algorithm for multiplication in $$Z_2^{5×5}$$ is still not the end of the story. Technical Report 2210.04045, arXiv, 2022.
 
 <!-- outline-end -->
 
