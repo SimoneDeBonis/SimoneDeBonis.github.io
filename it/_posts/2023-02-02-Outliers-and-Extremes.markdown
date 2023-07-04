@@ -16,7 +16,7 @@ img: ":swan.jpg"
 comments_disable: true
 
 # publish date
-date: 2021-09-12 13:45:08 +0900
+date: 2023-06-12 13:45:08 +0900
 
 # seo
 # if not specified, date will be used.
@@ -39,14 +39,4 @@ date: 2021-09-12 13:45:08 +0900
 #published: false
 ---
 
-{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
-
-{%- include util/auto-content-generator.liquid -%}
-
-<!-- outline-start -->
-
-{{ website_info_text_first }}
-
-<!-- outline-end -->
-
-{{ website_info_text_second }}
+Ornitologia statistica

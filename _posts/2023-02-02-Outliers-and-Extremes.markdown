@@ -16,7 +16,7 @@ img: ":swan.jpg"
 comments_disable: true
 
 # publish date
-date: 2021-08-10 11:32:53 +0900
+date: 2023-06-12 11:32:53 +0900
 
 # seo
 # if not specified, date will be used.
