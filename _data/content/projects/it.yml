@@ -31,6 +31,8 @@ page_data:
       img_title: "img title1"
       date: "2023-03-13"
       post: |
+            Questo progetto è in collaborazione con Damiano e Daniele, la versione originale è disponibile [qui](https://simonedebonis.github.io/Projects/Qlik/)
+            
             ### Obiettivo
             - Visualizzare il mix di produzione elettrica dei Paesi Europei 
             - Analisi degli scambi comunitari
@@ -50,6 +52,7 @@ page_data:
             **Mix Energetico Italia 2022**
 
             ![](/assets/img/projects/Qlik/Dashboard1.png)
+
             La dashboard 'Mix Energetico' è uno strumento completo che consente di analizzare in dettaglio la produzione interna di energia di ciascun paese europeo, fornendo risposte a quesiti del tipo:  quando e quali sorgenti di energia la nazione X ha impiegato nell'anno XXXX? Grazie alla presenza di due pulsanti di navigazione indicati con i nomi delle rispettive sezioni, l'esplorazione e la navigazione all'interno della dashboard é intuitive e semplici.
 
             **KPI**
@@ -67,6 +70,7 @@ page_data:
             **Mix Energetico Germania 2022**
 
             ![](assets/img/projects/Qlik/Dashboard1.2.png)
+
             Nello stesso periodo, in Germania, il consumo pro capite è stato di 6,19 MWh, registrando una diminuzione dell'11,5% rispetto al 2016 e del 10% rispetto al periodo pre-Covid. Tuttavia, la Germania detiene il primato del consumo individuale più elevato in tutto il vecchio continente. Nel 2022, il 46,95% dei consumi tedeschi è stato prodotto da fonti "Verdi", evidenziando una crescita del 14,72% negli ultimi 7 anni. Nonostante ciò, tale percentuale è inferiore al picco massimo raggiunto nel 2020, quando ha raggiunto il 50,58%. Ciò indica che la Germania si avvicina di più alla media europea rispetto all'Italia in termini di consumo di energia da fonti verdi.
 
             Le fonti verdi, come l'eolico e il solare, hanno avuto un peso maggiore nel sistema produttivo tedesco rispetto alle medie europee, nonostante l'uso ancora intenso di materiali altamente inquinanti come il carbone e il gas. Dal punto di vista temporale, la sorgente "Fossili" è sempre meno utilizzata (ad eccezione dell'anno 2022) e viene sostituita da fonti "Verdi" come l'eolico e il solare. Allo stesso tempo, l'energia nucleare sta perdendo importanza nel portafoglio produttivo tedesco poiché le poche centrali ancora in funzione sono in fase di dismissione.
@@ -83,6 +87,7 @@ page_data:
             **Italia 2021**
 
             ![](/assets/img/projects/Qlik/Dashboard2.png)
+
             Attraverso il pulsante 'Analisi', è possibile accedere alla seconda dashboard che si focalizza sull'analisi commerciale dell'energia, fornendo anche alcuni insights riguardanti gli aspetti socio-economici del paese selezionato.
 
             **KPI**
@@ -101,6 +106,7 @@ page_data:
             **Francia 2021**
 
             ![](/assets/img/projects/Qlik/Dashboard2.2.png)
+
             Nel corso del 2021, la Francia ha mantenuto una bilancia commerciale positiva di 45 TWh, confermando il suo ruolo di maggior esportatore di energia elettrica nel continente. Questo valore è aumentato dell'8,17% rispetto agli ultimi 5 anni. Tra i principali partner verso cui la Francia esporta energia, troviamo l'Italia, il Regno Unito, il Belgio e la Spagna. Un aspetto interessante è che l'Italia appare tra i paesi da cui la Francia importa energia, principalmente a causa del fatto che la Corsica soddisfa il suo fabbisogno energetico attraverso l'esportazione italiana.
 
             Analizzando l'occupazione femminile in Francia, si può osservare un aumento dal 48,35% nel 2016 al 48,96% nel 2021. Questo indica una disparità occupazionale inferiore rispetto all'Italia. Ampliando l'analisi ai paesi nordici, emerge una caratteristica comune: una bassa disparità occupazionale tra generi e un maggiore utilizzo delle fonti di energia rinnovabile rispetto all'Italia o ad altri paesi con caratteristiche simili. Questo tipo di confronto é ancora più accentuato nel confronto tra i paesi scandinavi e la Polonia o la Bulgaria.
@@ -112,6 +118,7 @@ page_data:
             ### Impatto ambientale
 
             ![](/assets/img/projects/Qlik/Dashboard3.png)
+
             Nella terza dashboard, troviamo visualizzazioni che mettono in evidenza l'efficienza delle reti produttive nazionali e l'impatto delle emissioni sulla salute dei cittadini.
 
             **KPI**
