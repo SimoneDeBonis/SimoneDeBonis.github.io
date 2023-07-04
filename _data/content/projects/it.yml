@@ -12,24 +12,24 @@ page_data:
     back_color: "lightblue"
 
   category:
-    - title: "Example"
+    - title: "Data Visualization"
       type: id_example
       color: "#2C74B3"
-    - title: "Picture"
+    - title: "Machine Learning"
       type: id_picture
       color: "#0081C9"
-    - title: "Quote"
+    - title: "Data Science"
       type: id_quote
       color: "#5BC0F8"
 
   list:
     # example
     - type: id_example
-      project_name: "Example Project"
-      project_excerpt: "Examples"
-      img: ":project1_thumb.jpg"
+      project_name: "Analisi del mix Energetico dei paesi europei"
+      project_excerpt: "Data Visualization"
+      img: ":mix_energetico.jpg"
       img_title: "img title1"
-      date: "2021-03-13"
+      date: "2023-03-13"
       post: |
             ### Obiettivo
             - Visualizzare il mix di produzione elettrica dei Paesi Europei 
