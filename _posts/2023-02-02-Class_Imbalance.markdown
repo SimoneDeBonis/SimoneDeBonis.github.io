@@ -1,7 +1,7 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: classimbalance
-title: "Class imbalance: Why it matters and how to handle it"
+title: "How to fight imbalance: SMOTE vs ROSE, an empirical comparison"
 
 # post specific
 # if not specified, .name will be used from _data/owner/[language].yml
@@ -38,7 +38,4 @@ date: 2022-03-03 12:32:10 +0900
 # to disable this page, simply set published: false or delete this file
 #published: false
 ---
-
-{%- capture readme_file -%}{%- include_relative _README.md -%}{%- endcapture -%}
-{%- assign tmp_content = readme_file | split: "<!-- readme -->" -%}
-{{tmp_content[1]}}
+In [this project](https://simonedebonis.github.io/Projects/Default/) we used an SVM to predict the default of italian municipalities. The original dataset was imbalanced and we used () to balance it. How does it compare with ()? let's find out.

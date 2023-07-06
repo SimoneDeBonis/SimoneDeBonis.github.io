@@ -12,13 +12,13 @@ page_data:
     back_color: "lightblue"
 
   category:
-    - title: "Example"
+    - title: "Data Visualization"
       type: id_example
       color: "#2C74B3"
-    - title: "Picture"
+    - title: "Machine Learning"
       type: id_picture
       color: "#0081C9"
-    - title: "Quote"
+    - title: "Data Science"
       type: id_quote
       color: "#5BC0F8"
 
