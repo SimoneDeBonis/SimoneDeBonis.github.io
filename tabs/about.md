@@ -37,9 +37,5 @@ img: ":nh-90.jpg"
 
 
 ---
-{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
+Thanks for stopping by! My contacts are on the left, do not hesitate to contact me!
 
-{%- include util/auto-content-generator.liquid -%}
-{{ website_info_text_first }}
-
-{{ website_info_text_second }}

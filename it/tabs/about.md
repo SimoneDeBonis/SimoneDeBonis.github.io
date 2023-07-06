@@ -36,10 +36,4 @@ img: ":nh-90.jpg"
 #published: false
 ---
 
-{%- comment -%} Please delete below and place your page content here {%- endcomment -%}
-
-
-
-{{ website_info_text_second }}
-
-
+Grazie di essere passato! I miei contatti sono sulla sinistra, non esitare a contattarmi! 
