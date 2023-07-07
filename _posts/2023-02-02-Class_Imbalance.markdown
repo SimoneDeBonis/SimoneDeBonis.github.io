@@ -38,5 +38,5 @@ date: 2022-03-03 12:32:10 +0900
 # to disable this page, simply set published: false or delete this file
 #published: false
 ---
-In [this project](https://simonedebonis.github.io/Projects/Default/) we used an SVM to predict the default of italian municipalities. The original dataset was imbalanced and we used () to balance it. 
+In [this project](https://simonedebonis.github.io/Projects/Default/) we used an SVM to predict the default of italian municipalities. The original dataset was imbalanced and we used  to balance it. 
 How do different approaches work? 

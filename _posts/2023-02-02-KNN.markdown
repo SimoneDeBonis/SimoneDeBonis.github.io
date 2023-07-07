@@ -115,6 +115,4 @@ Memory based learner, lazy because doesn't create a synthetic model, easy to imp
 - Editing: remove objects to improve efficiency.
 
 
-<!-- outline-end -->
 
-{{ website_info_text_second }}
