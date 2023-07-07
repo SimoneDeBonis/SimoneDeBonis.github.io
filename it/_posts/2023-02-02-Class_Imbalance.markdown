@@ -1,17 +1,17 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: classimbalance
-title: "Class imbalance: Why it matters and how to handle it"
+title: "Come bilanciare i dati: SMOTE vs ROSE, un approccio empirico"
 
 # post specific
 # if not specified, .name will be used from _data/owner/[language].yml
-author: Mr. Green's Workshop
+author: Simone
 # multiple category is not supported
 category: jekyll
 # multiple tag entries are possible
 tags: [jekyll, new feature]
 # thumbnail image for post
-img: ":mock1.jpg"
+img: ":balance.jpg"
 # disable comments on this page
 #comments_disable: true
 

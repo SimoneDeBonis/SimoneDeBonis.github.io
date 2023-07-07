@@ -1,17 +1,17 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
 lng_pair: classimbalance
-title: "How to fight imbalance: SMOTE vs ROSE, an empirical comparison"
+title: "How to balance your data: SMOTE vs ROSE, an empirical comparison"
 
 # post specific
 # if not specified, .name will be used from _data/owner/[language].yml
-author: Mr. Green's Workshop
+author: Simone
 # multiple category is not supported
 category: jekyll
 # multiple tag entries are possible
 tags: [jekyll, new feature]
 # thumbnail image for post
-img: ":mock1.jpg"
+img: ":balance.jpg"
 # disable comments on this page
 #comments_disable: true
 
@@ -38,4 +38,5 @@ date: 2022-03-03 12:32:10 +0900
 # to disable this page, simply set published: false or delete this file
 #published: false
 ---
-In [this project](https://simonedebonis.github.io/Projects/Default/) we used an SVM to predict the default of italian municipalities. The original dataset was imbalanced and we used () to balance it. How does it compare with ()? let's find out.
+In [this project](https://simonedebonis.github.io/Projects/Default/) we used an SVM to predict the default of italian municipalities. The original dataset was imbalanced and we used () to balance it. 
+How do different approaches work? 
