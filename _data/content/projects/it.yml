@@ -22,7 +22,7 @@ page_data:
       color: "#5BC0F8"
 
   list:
-      - type: id_datascience
+    - type: id_datascience
       project_name: "Predizione del default dei comuni italiani"
       project_excerpt: "Data Science"
       img: "/assets/img/projects/Qlik/mix_energetico.jpg"
