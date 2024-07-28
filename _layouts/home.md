@@ -62,36 +62,6 @@ layout: default
   </div>
 </div>
 
-{% capture content1 %}{% include work/AI_{{lng}}.md %}{% endcapture %}
-
-<div class="multipurpose-container about-container">
-  <div class="row about-main">
-    <div class="col-md-3 about-img">
-      <img src=":AI.jpg" alt="">
-    </div>
-    <div class="col-md-9 about-header">
-      <h1 translate="no"><a href="https://simonedebonis.github.io/dla">Deep Learning Algorithms</a></h1>
-      <div class="meta-container">
-          <p class="sub-title">
-            <i class="{{ 'fa-fw ' }}{{ site.data.conf.others.about.sub_title_icon }}" aria-hidden="true"></i>
-            &nbsp;{{ page.ai }}
-          </p>
-      </div>
-    </div>
-  </div>
-  <div class="row about-divider">
-    <hr>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <div class="home-intro-text markdown-style">
-        {{ content1 | markdownify }}
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
 {% capture content3 %}{% include work/TS_{{lng}}.md %}{% endcapture %}
 <div class="multipurpose-container about-container">
