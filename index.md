@@ -41,14 +41,13 @@ img_ai: ":Ai.jpg"
 
 # {{ website_info_text_second }}
 
-ai: "implemented with Pytorch"
 time: "From ARMA to modern techniques"
 ML: "explained in details with math and Numpy"
 ---
 
 ### Hello!
 
-I'm Simone, a Data Science student from Italy passionate about Artifficial Intelligence, Cybersecurity and Aerospace
+I'm Simone, a Data Scientist from Italy working in the energy sector, I'm deeply passionate about energy, finance and quantitative modeling.
 
 ## What I'm working on: 
 - **University thesis**: I'm applying machine learning techniques to telemetry data to understand and prevent faults in the automotive industry.
