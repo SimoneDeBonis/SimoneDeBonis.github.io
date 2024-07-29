@@ -106,7 +106,7 @@ page_data:
       title: "Data Scientist"
       url: ""
       info: "Psaier Energies"
-      date: "October 2023, UNIVPM"
+      date: "October 2023, Bressanone, IT"
     - type: id_programming
       title: "Research internship"
       url: ""

@@ -47,16 +47,24 @@ ML: "explained in details with math and Numpy"
 
 ### Hello!
 
-I'm Simone, a Data Scientist from Italy working in the energy sector, I'm deeply passionate about energy, finance and quantitative modeling.
+I'm Simone, a Data Scientist from Italy working in the energy sector. I am deeply passionate about energy, finance, and quantitative modeling.
 
-## What I'm working on: 
-- **University thesis**: I'm applying machine learning techniques to telemetry data to understand and prevent faults in the automotive industry.
-- **Project Work** in the context of the [big data lab](https://www.bigdata-lab.it): I've utilized advanced machine learning techniques for multivariate anomaly detection of time series data obtained from server logs, properly preprocessed.
-- **University Project**: I have collaborated with my colleagues to develop an early warning system using Support Vector Machine and Multi-Layer Perceptron models to prevent defaults in Italian municipalities.
+## What I'm Working On:
+**Data Scientist** at Psaier Energies: I work in the energy trading department, where my main tasks include:
+- Developing and monitoring models for Italian energy market forecasts and analysis.
+- Migrating legacy data processes from on-premises to Azure.
+- Analyzing data using Python and SQL.
+- Creating Power BI dashboards for real-time monitoring and decision-making in energy trading.
 
-Thank you for visiting, and if you have any questions or feedback, please feel free to contact me. Many parts are still a work in progress. Enjoy your browsing!
+## What I've Recently Done:
+- **University Thesis**: Developed a Python program to integrate knowledge from various machine learning models to predict and understand engine failures for a leading automotive company.
+- **Project Work** at [Big Data Lab](https://www.bigdata-lab.it): Utilized advanced machine learning techniques for multivariate anomaly detection of time series data obtained from server logs, which were properly preprocessed.
+- **University Project**: Collaborated with colleagues to develop an early warning system using Support Vector Machine and Multi-Layer Perceptron models to prevent defaults in Italian municipalities.
 
-## Working Projects:
+Thank you for visiting! If you have any questions or feedback, please feel free to contact me. Many parts are still a work in progress. Enjoy your browsing!
+
+
+## Divulgation Projects: \[looking for collaborators\]
 
 
  
