@@ -1,7 +1,7 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
-lng_pair: outliers
-title: Outliers, Extremes and Black Swans
+lng_pair: tails
+title: Fat and Heavy tails, difference and implications
 
 # post specific
 # if not specified, .name will be used from _data/owner/[language].yml
@@ -16,7 +16,7 @@ img: ":swan.jpg"
 comments_disable: true
 
 # publish date
-date: 2023-06-12 11:32:53 +0900
+date: 2024-07-28 11:32:53 +0900
 
 # seo
 # if not specified, date will be used.
@@ -40,6 +40,8 @@ date: 2023-06-12 11:32:53 +0900
 
 ---
 Heavy tail is a very large class in opposition to light tails wich is the family of distributions that behaves like an exponential or gaussian distribution, in heavy tails the tail decays much slowlyier
+
+central limit theorem implications
 
 $$ $$
 <!-- outline-start -->

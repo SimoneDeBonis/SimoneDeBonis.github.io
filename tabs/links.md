@@ -103,6 +103,11 @@ page_data:
     -
     # Esperienza
     - type: id_programming
+      title: "Data Scientist"
+      url: ""
+      info: "Psaier Energies"
+      date: "October 2023, UNIVPM"
+    - type: id_programming
       title: "Research internship"
       url: ""
       info: ""

@@ -35,7 +35,6 @@ img: ":home-heading.jpg"
 # to disable this page, simply set published: false or delete this file
 # don't forget that this is root index.html. If you disable this, there will be no index.html page to open
 #published: false
-ai: "implementati con Pytorch"
 time: "Da ARMA alle tecniche recenti"
 ML: "approfonditi in dettaglio con matematica e Numpy"
 ---
