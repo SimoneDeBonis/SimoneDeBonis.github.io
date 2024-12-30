@@ -102,23 +102,23 @@ page_data:
     -
     # Experience
     - type: id_experience
-      title: "Machine Learning Engineer"
-      url: ""
-      info: "Intesa Sanpaolo"
-      date: "Gennaio 2025 - Presente, Torino, IT"
-    - type: id_experience
-      title: "Data Scientist"
-      url: ""
-      info: "Psaier Energies"
-      date: "Ottobre 2023 - Dicembre 2024, Bressanone, IT"
-    - type: id_experience
-      title: "Tirocinio di ricerca"
+      title: "Machine Learning Engineer<br>Intesa Sanpaolo"
       url: ""
       info: ""
-      date: "Febbraio 2023 - Ottobre 2023, UNIVPM, Ancona, IT"
+      date: "Gen 2025 - Presente<br>Torino, IT"
+    - type: id_experience
+      title: "Data Scientist<br>Psaier Energies"
+      url: ""
+      info: ""
+      date: "Ott 2023 - Dic 2024<br>Bressanone, IT"
+    - type: id_experience
+      title: "Research internship"
+      url: ""
+      info: ""
+      date: "Feb 2023 - Ott 2023<br>UNIVPM, Ancona, IT"
     - type: id_experience
       title: "Freelancer"
       url: ""
       info: ""
-      date: "Novembre 2022 - Febbraio 2023, remoto"
+      date: "Nov 2022 - Feb 2023<br>remoto"
 ---
