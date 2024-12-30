@@ -66,19 +66,19 @@ page_data:
       title: "Data Science per l'Economia e le Imprese"
       url: ""
       info: "Computational statistics, Big Data Engineering, Big Data Econometrics."
-      date: "2021-2023, Ancona"
+      date: "2021-2023<br>Ancona, IT"
 
     - type: id_education
       title: "Economia, Mercati e Istituzioni"
       url: ""
       info: "Statistica, Econometria, Finanza Aziendale."
-      date: "2017-2021, Bologna"
+      date: "2017-2021<br>Bologna, IT"
 
     - type: id_education
       title: "Liceo Scientifico"
       url: ""
       info: "interessi principali fisica e informatica"
-      date: "2012-2017, Ferrara"
+      date: "2012-2017<br>Ferrara, IT"
 
     # Formazione
     - type: id_courses
@@ -109,7 +109,7 @@ page_data:
     - type: id_experience
       title: "Data Scientist<br>Psaier Energies"
       url: ""
-      info: ""
+      info: "Azure, PowerBI, Python, SQL"
       date: "Ott 2023 - Dic 2024<br>Bressanone, IT"
     - type: id_experience
       title: "Research internship"
