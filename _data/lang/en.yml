@@ -173,7 +173,7 @@ privacy-policy:
 constants:
   greetings: Hello
   welcome: Welcome
-  sample: Machine Learning Engineer       Data Scientist
+  sample: Machine Learning Engineer<br>Data Scientist
 
 # for contact form
 contact_form:
