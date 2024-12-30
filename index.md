@@ -45,7 +45,7 @@ time: "From ARMA to modern techniques"
 ML: "explained in details with math and Numpy"
 ---
 
-### Hello!
+###
 
 I'm Simone, a Data Scientist from Italy working in the energy sector. I am deeply passionate about energy, finance, and quantitative modeling.
 
@@ -61,7 +61,7 @@ I'm Simone, a Data Scientist from Italy working in the energy sector. I am deepl
 - **Project Work** at [Big Data Lab](https://www.bigdata-lab.it): Utilized advanced machine learning techniques for multivariate anomaly detection of time series data obtained from server logs, which were properly preprocessed.
 - **University Project**: Collaborated with colleagues to develop an early warning system using Support Vector Machine and Multi-Layer Perceptron models to prevent defaults in Italian municipalities.
 
-Thank you for visiting! If you have any questions or feedback, please feel free to contact me. Many parts are still a work in progress. Enjoy your browsing!
+Thank you for visiting! Feel free to contact me. Many parts are still a work in progress. Enjoy your browsing!
 
 
 ## Divulgation Projects: \[looking for collaborators\]
