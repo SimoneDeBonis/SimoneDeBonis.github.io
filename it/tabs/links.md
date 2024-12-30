@@ -47,72 +47,78 @@ page_data:
 
   # To change order of the Categories, simply change order. (you don't need to change list order.)
   category:
-    - title: "Istruzione"
-      type: id_istruzione
-      color: "#2C74B3"
-
     - title: "Esperienza"
-      type: id_programming
+      type: id_experience
       color: "#5BC0F8"
 
-    - title: "Formazione"
-      type: id_formazione
-      color: "#0081C9"
+    - title: "Istruzione"
+      type: id_education
+      color: "#2C74B3"
 
-    
+    - title: "Formazione"
+      type: id_courses
+      color: "#0081C9"
 
   list:
 
-
     # istruzione
-    - type: id_istruzione
+    - type: id_education
       title: "Data Science per l'Economia e le Imprese"
       url: ""
       info: "Computational statistics, Big Data Engineering, Big Data Econometrics."
       date: "2021-2023, Ancona"
 
-    - type: id_istruzione
+    - type: id_education
       title: "Economia, Mercati e Istituzioni"
       url: ""
       info: "Statistica, Econometria, Finanza Aziendale."
       date: "2017-2021, Bologna"
 
-    - type: id_istruzione
+    - type: id_education
       title: "Liceo Scientifico"
       url: ""
       info: "interessi principali fisica e informatica"
       date: "2012-2017, Ferrara"
 
     # Formazione
-    - type: id_formazione
+    - type: id_courses
       title: "Artificial Intelligence & Machine Learning"
       url: "https://app.myopenbadge.com/receive/FvZtgrxBNEc-6e7e1bc881c70fd0eeed0ab7f35f3b0c-d3m8KeZqx-51641983520/heIx-44b5361112e0b13a7cb64e3e1a062ef0-lqmF5u7A-8/public"
       info: ""
       date: "IFOA, 60 ore"
 
-    - type: id_formazione
+    - type: id_courses
       title: "Applicazioni di Deep Learning"
       url: "https://app.myopenbadge.com/receive/FvZtgrxBNEc-6e7e1bc881c70fd0eeed0ab7f35f3b0c-d3m8KeZqx-51641983520/BiIfnvezJ-0034b39650acd254eb26916bcabc6800-3cUvBJxMthsm-2/public"
       info: ""
       date: "IFOA, 60 ore"
 
-    - type: id_formazione
+    - type: id_courses
       title: "Marketing Analytics & Business Intelligence"
       url: "https://app.myopenbadge.com/receive/FvZtgrxBNEc-6e7e1bc881c70fd0eeed0ab7f35f3b0c-d3m8KeZqx-51641983520/grhHFS-9be5fb854c73a297d744009314116fbc-9NvfF3GcXQ-2/public"
       info: ""
       date: "Forpin, 120 ore"
 
     -
-    # Esperienza
-    - type: id_programming
+    # Experience
+    - type: id_experience
+      title: "Machine Learning Engineer"
+      url: ""
+      info: "Intesa Sanpaolo"
+      date: "Gennaio 2025 - Presente, Torino, IT"
+    - type: id_experience
+      title: "Data Scientist"
+      url: ""
+      info: "Psaier Energies"
+      date: "Ottobre 2023 - Dicembre 2024, Bressanone, IT"
+    - type: id_experience
       title: "Tirocinio di ricerca"
       url: ""
       info: ""
-      date: "Aprile 2023, UNIVPM"
-
-    - type: id_programming
+      date: "Febbraio 2023 - Ottobre 2023, UNIVPM, Ancona, IT"
+    - type: id_experience
       title: "Freelancer"
       url: ""
       info: ""
-      date: "Aprile 2023"
+      date: "Novembre 2022 - Febbraio 2023, remoto"
 ---
