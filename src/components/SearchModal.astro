@@ -1,0 +1,180 @@
+---
+import { getCollection } from 'astro:content';
+import { useTranslations, getLocalizedPath, type Lang } from '../i18n/ui';
+import { cvData } from '../data/cv';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const posts = await getCollection('blog', (entry) => entry.data.lang === lang);
+const projects = await getCollection('projects', (entry) => entry.data.lang === lang);
+const cv = cvData[lang];
+
+const searchItems = [
+  ...posts.map((p) => ({
+    type: 'Blog',
+    title: p.data.title,
+    description: p.data.description,
+    tags: p.data.tags.join(' '),
+    url: getLocalizedPath(`/blog/${p.data.slugId}`, lang),
+  })),
+  ...projects.map((p) => ({
+    type: lang === 'it' ? 'Progetto' : 'Project',
+    title: p.data.title,
+    description: p.data.description,
+    tags: p.data.tags.join(' '),
+    url: getLocalizedPath(`/projects/${p.data.slugId}`, lang),
+  })),
+  ...cv.experience.map((e) => ({
+    type: 'CV',
+    title: `${e.title} — ${e.organization}`,
+    description: `${e.period} · ${e.location}. ${e.description || ''}`,
+    tags: (e.skills || []).join(' '),
+    url: getLocalizedPath('/cv#experience', lang),
+  })),
+  ...cv.education.map((e) => ({
+    type: 'CV',
+    title: `${e.title} — ${e.organization}`,
+    description: `${e.period} · ${e.location}. ${e.description || ''}`,
+    tags: (e.skills || []).join(' '),
+    url: getLocalizedPath('/cv#education', lang),
+  })),
+];
+---
+
+<div
+  id="search-modal"
+  class="fixed inset-0 z-50 hidden items-start justify-center pt-20 px-4 bg-slate-950/60 backdrop-blur-xs"
+  role="dialog"
+  aria-modal="true"
+  aria-label={t('nav.search')}
+>
+  <div class="w-full max-w-xl rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-2xl overflow-hidden">
+    <div class="flex items-center gap-3 px-4 py-3 border-b border-slate-200 dark:border-slate-800">
+      <svg class="w-4 h-4 text-slate-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="m21 21-4.3-4.3"></path>
+      </svg>
+      <input
+        id="search-input"
+        type="search"
+        placeholder={t('nav.searchPlaceholder')}
+        class="w-full bg-transparent text-sm text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:outline-none"
+        autocomplete="off"
+      />
+      <button
+        type="button"
+        id="close-search-btn"
+        class="px-2 py-0.5 text-xs font-mono rounded border border-slate-200 dark:border-slate-700 text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 cursor-pointer"
+      >
+        ESC
+      </button>
+    </div>
+
+    <div id="search-results" class="max-h-80 overflow-y-auto divide-y divide-slate-100 dark:divide-slate-800/70 p-2">
+      <!-- Populated dynamically -->
+    </div>
+  </div>
+</div>
+
+<script is:inline define:vars={{ searchItems }}>
+  (() => {
+    const modal = document.getElementById('search-modal');
+    const openBtn = document.getElementById('open-search-btn');
+    const closeBtn = document.getElementById('close-search-btn');
+    const input = document.getElementById('search-input');
+    const resultsContainer = document.getElementById('search-results');
+
+    function renderResults(query) {
+      if (!resultsContainer) return;
+      const q = (query || '').trim().toLowerCase();
+      const filtered = q
+        ? searchItems.filter(
+            (item) =>
+              item.title.toLowerCase().includes(q) ||
+              item.description.toLowerCase().includes(q) ||
+              item.tags.toLowerCase().includes(q)
+          )
+        : searchItems.slice(0, 6);
+
+      resultsContainer.textContent = '';
+
+      if (filtered.length === 0) {
+        const empty = document.createElement('div');
+        empty.className = 'p-6 text-center text-xs text-slate-400';
+        empty.textContent = 'No matching results found.';
+        resultsContainer.appendChild(empty);
+        return;
+      }
+
+      filtered.forEach((item) => {
+        const link = document.createElement('a');
+        link.href = item.url;
+        link.className =
+          'block p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/70 transition';
+
+        const topRow = document.createElement('div');
+        topRow.className = 'flex items-center justify-between gap-2 mb-1';
+
+        const titleEl = document.createElement('span');
+        titleEl.className = 'text-sm font-semibold text-slate-900 dark:text-slate-100';
+        titleEl.textContent = item.title;
+
+        const badgeEl = document.createElement('span');
+        badgeEl.className =
+          'text-[10px] font-mono uppercase px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300 shrink-0';
+        badgeEl.textContent = item.type;
+
+        topRow.appendChild(titleEl);
+        topRow.appendChild(badgeEl);
+
+        const descEl = document.createElement('p');
+        descEl.className = 'text-xs text-slate-500 dark:text-slate-400 line-clamp-2';
+        descEl.textContent = item.description;
+
+        link.appendChild(topRow);
+        link.appendChild(descEl);
+        resultsContainer.appendChild(link);
+      });
+    }
+
+    function openModal() {
+      if (!modal || !input) return;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      renderResults(input.value);
+      setTimeout(() => input.focus(), 20);
+    }
+
+    function closeModal() {
+      if (!modal) return;
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+    }
+    if (input) {
+      input.addEventListener('input', (e) => renderResults(e.target.value));
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        if (modal && modal.classList.contains('hidden')) openModal();
+        else closeModal();
+      } else if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+  })();
+</script>

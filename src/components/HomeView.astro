@@ -1,0 +1,400 @@
+---
+import { getCollection } from 'astro:content';
+import { useTranslations, getLocalizedPath, type Lang } from '../i18n/ui';
+import { profile } from '../data/profile';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const user = profile[lang];
+
+const posts = (await getCollection('blog', (p) => p.data.lang === lang)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+const projects = (await getCollection('projects', (p) => p.data.lang === lang)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const latestPost = posts[0];
+const featuredProject = projects[0];
+
+function formatDate(d: Date, locale: Lang) {
+  return d.toLocaleDateString(locale === 'it' ? 'it-IT' : 'en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+}
+---
+
+<div class="space-y-14">
+  <!-- Executive Hero Section -->
+  <section class="relative rounded-3xl border border-slate-200/90 dark:border-slate-800/90 bg-gradient-to-br from-slate-50 via-white to-blue-50/40 dark:from-slate-900/90 dark:via-slate-950 dark:to-blue-950/25 p-6 sm:p-10 shadow-xs">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+      <div class="space-y-4 max-w-2xl">
+        <!-- Live Role Badge -->
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-100/80 dark:bg-blue-950/90 text-blue-700 dark:text-blue-300 border border-blue-200/70 dark:border-blue-800/70">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>{t('hero.status')}</span>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
+            {user.name}
+          </h1>
+          <p class="text-base sm:text-lg font-medium text-blue-600 dark:text-blue-400">
+            {user.role} · <span class="text-slate-500 dark:text-slate-400 font-normal">{user.location}</span>
+          </p>
+        </div>
+
+        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+          {user.bio}
+        </p>
+
+        <!-- Domain Pills -->
+        <div class="flex flex-wrap gap-2 pt-1">
+          {user.domainPills.map((pill) => (
+            <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300">
+              {pill}
+            </span>
+          ))}
+        </div>
+
+        <!-- Primary Actions & Socials -->
+        <div class="flex flex-wrap items-center gap-3 pt-2">
+          <a
+            href={user.cvPdfPath}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold bg-blue-600 hover:bg-blue-700 text-white shadow-xs transition"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 16V4m0 12-4-4m4 4 4-4M4 20h16"></path>
+            </svg>
+            {t('hero.downloadCv')}
+          </a>
+
+          <a
+            href={getLocalizedPath('/projects', lang)}
+            class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 hover:border-blue-500 dark:hover:border-blue-400 text-slate-700 dark:text-slate-200 transition"
+          >
+            {t('hero.viewProjects')}
+          </a>
+
+          <div class="flex items-center gap-2 pl-1">
+            <a
+              href={user.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              title="GitHub"
+              class="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-500/40 transition"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"></path>
+              </svg>
+            </a>
+            <a
+              href={user.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+              class="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-500/40 transition"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"></path>
+              </svg>
+            </a>
+            <button
+              type="button"
+              id="copy-email-hero"
+              data-user={user.emailUser}
+              data-domain={user.emailDomain}
+              data-label={t('hero.copyEmail')}
+              data-copied={t('hero.emailCopied')}
+              class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-mono border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-500/40 transition cursor-pointer"
+            >
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span id="copy-email-text">{t('hero.copyEmail')}</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Avatar -->
+      <div class="shrink-0 hidden sm:block">
+        <img
+          src={user.avatar}
+          alt={user.name}
+          width="160"
+          height="160"
+          class="w-32 h-32 md:w-40 md:h-40 rounded-3xl object-cover shadow-lg ring-4 ring-white dark:ring-slate-900 border border-slate-200 dark:border-slate-800"
+        />
+      </div>
+    </div>
+
+    <!-- Option A: 3-Column Bento Summary Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 pt-8 border-t border-slate-200/80 dark:border-slate-800/80">
+      <!-- Bento 1: Experience Snapshot -->
+      <div class="p-4 rounded-2xl border border-slate-200/80 dark:border-slate-800 bg-white/90 dark:bg-slate-900/80 flex flex-col justify-between space-y-3">
+        <div class="space-y-1.5">
+          <div class="flex items-center justify-between text-xs">
+            <span class="font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+              {t('home.bentoExperience')}
+            </span>
+            <a href={getLocalizedPath('/cv', lang)} class="text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 font-medium">
+              {t('home.bentoFullCv')}
+            </a>
+          </div>
+          <div class="text-sm font-bold text-slate-900 dark:text-white">
+            Intesa Sanpaolo
+          </div>
+          <div class="text-xs text-slate-500 dark:text-slate-400">
+            Machine Learning Engineer (2025–Present)
+          </div>
+        </div>
+        <div class="pt-2 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400 flex items-center justify-between">
+          <span>Psaier Energies · Data Scientist</span>
+          <span class="font-mono">2023–2024</span>
+        </div>
+      </div>
+
+      <!-- Bento 2: Featured Project -->
+      {featuredProject && (
+        <a
+          href={getLocalizedPath(`/projects/${featuredProject.data.slugId}`, lang)}
+          class="group p-4 rounded-2xl border border-slate-200/80 dark:border-slate-800 bg-white/90 dark:bg-slate-900/80 hover:border-blue-500/50 transition flex flex-col justify-between space-y-3"
+        >
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between text-xs">
+              <span class="font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+                {t('home.bentoFeaturedProject')}
+              </span>
+              <span class="text-slate-500 group-hover:text-blue-600 dark:group-hover:text-blue-400 font-medium">
+                {t('home.bentoAllProjects')}
+              </span>
+            </div>
+            <div class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition line-clamp-1">
+              {featuredProject.data.title}
+            </div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2">
+              {featuredProject.data.description}
+            </p>
+          </div>
+          <div class="pt-2 border-t border-slate-100 dark:border-slate-800 text-[11px] font-mono text-slate-400">
+            {featuredProject.data.category}
+          </div>
+        </a>
+      )}
+
+      <!-- Bento 3: Latest Blog Article -->
+      {latestPost && (
+        <a
+          href={getLocalizedPath(`/blog/${latestPost.data.slugId}`, lang)}
+          class="group p-4 rounded-2xl border border-slate-200/80 dark:border-slate-800 bg-white/90 dark:bg-slate-900/80 hover:border-blue-500/50 transition flex flex-col justify-between space-y-3"
+        >
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between text-xs">
+              <span class="font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+                {t('home.bentoLatestPost')}
+              </span>
+              <span class="text-slate-500 group-hover:text-blue-600 dark:group-hover:text-blue-400 font-medium">
+                {t('home.bentoAllPosts')}
+              </span>
+            </div>
+            <div class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition line-clamp-1">
+              {latestPost.data.title}
+            </div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2">
+              {latestPost.data.description}
+            </p>
+          </div>
+          <div class="pt-2 border-t border-slate-100 dark:border-slate-800 text-[11px] font-mono text-slate-400 flex items-center justify-between">
+            <span>{formatDate(latestPost.data.date, lang)}</span>
+            <span>{latestPost.data.readingTime} {t('blog.minRead')}</span>
+          </div>
+        </a>
+      )}
+    </div>
+  </section>
+
+  <!-- What I'm Working On -->
+  <section class="space-y-5">
+    <div class="flex items-center justify-between">
+      <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+        {t('home.currentSection')}
+      </h2>
+      <a
+        href={getLocalizedPath('/cv', lang)}
+        class="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+      >
+        {t('home.bentoFullCv')}
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      {user.currentWork.map((item) => (
+        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 space-y-3 flex flex-col justify-between">
+          <div class="space-y-2.5">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="text-xs font-mono text-blue-600 dark:text-blue-400 font-medium">
+                {item.period}
+              </span>
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                {item.organization}
+              </span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 dark:text-white">
+              {item.title}
+            </h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              {item.description}
+            </p>
+            {item.bullets && (
+              <ul class="space-y-1.5 text-xs text-slate-600 dark:text-slate-300 list-disc pl-4 pt-1">
+                {item.bullets.map((b) => (
+                  <li>{b}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-100 dark:border-slate-800/80">
+            {item.tags.map((tag) => (
+              <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Recent Work & Research Highlights -->
+  <section class="space-y-5">
+    <div class="flex items-center justify-between">
+      <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+        {t('home.recentSection')}
+      </h2>
+      <a
+        href={getLocalizedPath('/projects', lang)}
+        class="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+      >
+        {t('home.bentoAllProjects')}
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {user.recentHighlights.map((item) => (
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="text-xs font-mono text-slate-400">
+              {item.period}
+            </div>
+            <h3 class="text-sm font-bold text-slate-900 dark:text-white">
+              {item.title}
+            </h3>
+            <div class="text-xs font-medium text-blue-600 dark:text-blue-400">
+              {item.organizationUrl ? (
+                <a href={item.organizationUrl} target="_blank" rel="noopener noreferrer" class="hover:underline">
+                  {item.organization} ↗
+                </a>
+              ) : (
+                item.organization
+              )}
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+
+          <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-100 dark:border-slate-800/80">
+            {item.tags.map((tag) => (
+              <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Latest Blog Articles -->
+  <section class="space-y-5">
+    <div class="flex items-center justify-between">
+      <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+        {t('home.recentPosts')}
+      </h2>
+      <a
+        href={getLocalizedPath('/archive', lang)}
+        class="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+      >
+        {t('home.viewArchive')}
+      </a>
+    </div>
+
+    <div class="divide-y divide-slate-200/80 dark:divide-slate-800/80 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 overflow-hidden">
+      {posts.slice(0, 5).map((post) => (
+        <a
+          href={getLocalizedPath(`/blog/${post.data.slugId}`, lang)}
+          class="group flex flex-col sm:flex-row sm:items-center justify-between gap-2 px-5 py-4 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition"
+        >
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-mono px-2 py-0.5 rounded bg-blue-50 dark:bg-blue-950/80 text-blue-600 dark:text-blue-300">
+                {post.data.category}
+              </span>
+              <h3 class="text-sm font-semibold text-slate-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">
+                {post.data.title}
+              </h3>
+            </div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-1">
+              {post.data.description}
+            </p>
+          </div>
+          <div class="flex items-center gap-3 text-xs font-mono text-slate-400 shrink-0">
+            <span>{formatDate(post.data.date, lang)}</span>
+            <span>·</span>
+            <span>{post.data.readingTime} {t('blog.minRead')}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</div>
+
+<script is:inline>
+  (() => {
+    const copyBtn = document.getElementById('copy-email-hero');
+    const copyText = document.getElementById('copy-email-text');
+    if (copyBtn && copyText) {
+      copyBtn.addEventListener('click', async () => {
+        const u = copyBtn.getAttribute('data-user');
+        const d = copyBtn.getAttribute('data-domain');
+        const copiedLabel = copyBtn.getAttribute('data-copied') || 'Copied!';
+        const defaultLabel = copyBtn.getAttribute('data-label') || 'Copy Email';
+        if (u && d) {
+          const email = u + '@' + d;
+          try {
+            await navigator.clipboard.writeText(email);
+            copyText.textContent = copiedLabel + ' (' + email + ')';
+            setTimeout(() => {
+              copyText.textContent = defaultLabel;
+            }, 2500);
+          } catch (_) {
+            window.location.href = 'mailto:' + email;
+          }
+        }
+      });
+    }
+  })();
+</script>

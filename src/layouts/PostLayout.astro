@@ -1,0 +1,174 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { useTranslations, type Lang } from '../i18n/ui';
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  date: Date;
+  category: string;
+  tags: string[];
+  image?: string;
+  readingTime?: number;
+  externalUrl?: string;
+  backHref: string;
+  backLabel: string;
+  headings?: Heading[];
+  lang: Lang;
+}
+
+const {
+  title,
+  description,
+  date,
+  category,
+  tags,
+  image,
+  readingTime,
+  externalUrl,
+  backHref,
+  backLabel,
+  headings = [],
+  lang,
+} = Astro.props;
+
+const t = useTranslations(lang);
+const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
+const formattedDate = date.toLocaleDateString(lang === 'it' ? 'it-IT' : 'en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<BaseLayout title={title} description={description} lang={lang} ogImage={image}>
+  <div class="space-y-8">
+    <!-- Top Back Link -->
+    <div>
+      <a
+        href={backHref}
+        class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 transition"
+      >
+        {backLabel}
+      </a>
+    </div>
+
+    <!-- Article Header Card -->
+    <header class="space-y-4 pb-8 border-b border-slate-200 dark:border-slate-800">
+      <div class="flex flex-wrap items-center gap-3 text-xs">
+        <span class="font-semibold px-2.5 py-1 rounded-full bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-300">
+          {category}
+        </span>
+        <span class="font-mono text-slate-500 dark:text-slate-400">{formattedDate}</span>
+        {readingTime && (
+          <span class="font-mono text-slate-400">· {readingTime} {t('blog.minRead')}</span>
+        )}
+      </div>
+
+      <h1 class="text-2xl sm:text-4xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+        {title}
+      </h1>
+
+      <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed">
+        {description}
+      </p>
+
+      <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+        <div class="flex flex-wrap gap-1.5">
+          {tags.map((tag) => (
+            <span class="px-2.5 py-0.5 rounded-md text-xs font-mono bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+              #{tag}
+            </span>
+          ))}
+        </div>
+
+        {externalUrl && (
+          <a
+            href={externalUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-blue-600 hover:bg-blue-700 text-white shadow-xs transition"
+          >
+            {t('projects.originalDemo')}
+          </a>
+        )}
+      </div>
+    </header>
+
+    <!-- Option A: Full-Width Grid with Centered Prose + Sticky Right Table of Contents -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      <article class:list={['prose-custom text-slate-800 dark:text-slate-200', tocHeadings.length > 0 ? 'lg:col-span-8' : 'lg:col-span-10']}>
+        <slot />
+
+        <!-- Share & Copy Link Footer Bar -->
+        <div class="mt-12 pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center justify-between gap-4">
+          <a
+            href={backHref}
+            class="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline"
+          >
+            {backLabel}
+          </a>
+
+          <div class="flex items-center gap-2">
+            <span class="text-xs text-slate-400">{t('blog.share')}:</span>
+            <button
+              type="button"
+              id="copy-article-link"
+              data-label={t('blog.copyLink')}
+              data-copied={t('hero.emailCopied')}
+              class="px-3 py-1.5 rounded-lg text-xs font-mono border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:border-blue-500 transition cursor-pointer"
+            >
+              {t('blog.copyLink')}
+            </button>
+          </div>
+        </div>
+      </article>
+
+      {tocHeadings.length > 0 && (
+        <aside class="hidden lg:block lg:col-span-4 sticky top-24 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-900/50 space-y-3">
+          <div class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+            {t('blog.toc')}
+          </div>
+          <nav class="space-y-1.5 text-xs">
+            {tocHeadings.map((h) => (
+              <a
+                href={`#${h.slug}`}
+                class:list={[
+                  'block text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition truncate',
+                  h.depth === 3 ? 'pl-3 text-[11px]' : 'font-medium',
+                ]}
+              >
+                {h.text}
+              </a>
+            ))}
+          </nav>
+        </aside>
+      )}
+    </div>
+  </div>
+
+  <script is:inline>
+    (() => {
+      const btn = document.getElementById('copy-article-link');
+      if (btn) {
+        btn.addEventListener('click', async () => {
+          const defaultLabel = btn.getAttribute('data-label') || 'Copy link';
+          const copiedLabel = btn.getAttribute('data-copied') || 'Copied!';
+          try {
+            await navigator.clipboard.writeText(window.location.href);
+            btn.textContent = copiedLabel;
+            setTimeout(() => {
+              btn.textContent = defaultLabel;
+            }, 2000);
+          } catch (_) {}
+        });
+      }
+    })();
+  </script>
+</BaseLayout>

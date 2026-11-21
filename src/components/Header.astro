@@ -1,0 +1,204 @@
+---
+import { useTranslations, getLocalizedPath, type Lang } from '../i18n/ui';
+import { profile } from '../data/profile';
+
+interface Props {
+  lang: Lang;
+  currentPath: string;
+}
+
+const { lang, currentPath } = Astro.props;
+const t = useTranslations(lang);
+const user = profile[lang];
+
+const navItems = [
+  { label: t('nav.home'), href: getLocalizedPath('/', lang) },
+  { label: t('nav.cv'), href: getLocalizedPath('/cv', lang) },
+  { label: t('nav.projects'), href: getLocalizedPath('/projects', lang) },
+  { label: t('nav.blog'), href: getLocalizedPath('/blog', lang) },
+  { label: t('nav.archive'), href: getLocalizedPath('/archive', lang) },
+];
+
+const enUrl = getLocalizedPath(currentPath, 'en');
+const itUrl = getLocalizedPath(currentPath, 'it');
+
+function isActive(itemHref: string, path: string): boolean {
+  const normItem = itemHref.replace(/\/$/, '') || '/';
+  const normPath = path.replace(/\/$/, '') || '/';
+  if (normItem === '/' || normItem === '/it') {
+    return normPath === normItem;
+  }
+  return normPath === normItem || normPath.startsWith(`${normItem}/`);
+}
+---
+
+<header class="sticky top-0 z-40 w-full border-b border-slate-200/80 dark:border-slate-800/80 bg-white/85 dark:bg-slate-950/85 backdrop-blur-md">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+    <!-- Brand -->
+    <a href={getLocalizedPath('/', lang)} class="flex items-center gap-3 group shrink-0">
+      <img
+        src={user.avatar}
+        alt={user.name}
+        width="36"
+        height="36"
+        class="w-9 h-9 rounded-full object-cover ring-2 ring-blue-600/20 dark:ring-blue-400/30 group-hover:ring-blue-600 transition"
+      />
+      <div class="flex flex-col">
+        <span class="font-bold text-sm sm:text-base tracking-tight text-slate-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">
+          {user.name}
+        </span>
+        <span class="text-[11px] text-slate-500 dark:text-slate-400 hidden sm:inline">
+          ML Engineer · Intesa Sanpaolo
+        </span>
+      </div>
+    </a>
+
+    <!-- Center Desktop Nav -->
+    <nav aria-label="Main Navigation" class="hidden md:flex items-center gap-1">
+      {navItems.map((item) => {
+        const active = isActive(item.href, currentPath);
+        return (
+          <a
+            href={item.href}
+            class:list={[
+              'px-3 py-1.5 rounded-lg text-sm font-medium transition',
+              active
+                ? 'bg-blue-50 text-blue-700 dark:bg-blue-950/70 dark:text-blue-300'
+                : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/80 dark:text-slate-300 dark:hover:text-white dark:hover:bg-slate-800/60',
+            ]}
+          >
+            {item.label}
+          </a>
+        );
+      })}
+    </nav>
+
+    <!-- Right Utility Controls -->
+    <div class="flex items-center gap-2">
+      <!-- Search Trigger -->
+      <button
+        type="button"
+        id="open-search-btn"
+        aria-label={t('nav.search')}
+        class="inline-flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs font-medium border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:border-blue-500/50 hover:text-blue-600 dark:hover:text-blue-400 transition cursor-pointer"
+      >
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.3-4.3"></path>
+        </svg>
+        <span class="hidden sm:inline">{t('nav.search')}</span>
+        <kbd class="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono bg-white dark:bg-slate-800 rounded border border-slate-200 dark:border-slate-700 text-slate-400">
+          ⌘K
+        </kbd>
+      </button>
+
+      <!-- Language Switcher [EN | IT] -->
+      <div
+        class="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 p-0.5 text-xs font-mono"
+        role="group"
+        aria-label="Language switcher"
+      >
+        <a
+          href={enUrl}
+          class:list={[
+            'px-2 py-1 rounded-md font-semibold transition',
+            lang === 'en'
+              ? 'bg-blue-600 text-white shadow-xs'
+              : 'text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white',
+          ]}
+        >
+          EN
+        </a>
+        <a
+          href={itUrl}
+          class:list={[
+            'px-2 py-1 rounded-md font-semibold transition',
+            lang === 'it'
+              ? 'bg-blue-600 text-white shadow-xs'
+              : 'text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white',
+          ]}
+        >
+          IT
+        </a>
+      </div>
+
+      <!-- Dark / Light Theme Switcher -->
+      <button
+        type="button"
+        id="theme-toggle-btn"
+        aria-label={t('nav.themeToggle')}
+        title={t('nav.themeToggle')}
+        class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-500/40 transition cursor-pointer"
+      >
+        <!-- Sun icon (shown in dark mode) -->
+        <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+        </svg>
+        <!-- Moon icon (shown in light mode) -->
+        <svg class="w-4 h-4 block dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+        </svg>
+      </button>
+
+      <!-- Mobile Menu Button -->
+      <button
+        type="button"
+        id="mobile-menu-btn"
+        aria-label="Toggle Menu"
+        class="md:hidden p-2 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Nav -->
+  <nav
+    id="mobile-menu"
+    aria-label="Mobile Navigation"
+    class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 px-4 py-3 space-y-1"
+  >
+    {navItems.map((item) => {
+      const active = isActive(item.href, currentPath);
+      return (
+        <a
+          href={item.href}
+          class:list={[
+            'block px-3 py-2 rounded-lg text-sm font-medium',
+            active
+              ? 'bg-blue-50 text-blue-700 dark:bg-blue-950/70 dark:text-blue-300'
+              : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-900',
+          ]}
+        >
+          {item.label}
+        </a>
+      );
+    })}
+  </nav>
+</header>
+
+<script is:inline>
+  (() => {
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        const root = document.documentElement;
+        const isDark = root.classList.toggle('dark');
+        try {
+          localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        } catch (_) {}
+      });
+    }
+
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  })();
+</script>

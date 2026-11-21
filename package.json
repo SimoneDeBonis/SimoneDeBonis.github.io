@@ -1,0 +1,23 @@
+{
+  "name": "simone-de-bonis-website",
+  "type": "module",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Personal website and portfolio of Simone De Bonis — Machine Learning Engineer & Data Scientist",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.5",
+    "@fontsource/jetbrains-mono": "^5.2.5",
+    "@tailwindcss/vite": "^4.0.14",
+    "astro": "^5.5.0",
+    "katex": "^0.16.21",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
+    "tailwindcss": "^4.0.14"
+  }
+}
