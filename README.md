@@ -1,6 +1,6 @@
 # Simone De Bonis — Personal Website (`simonedebonis.github.io`)
 
-Modern, bilingual (`EN` / `IT`), cookieless, and security-hardened personal website built with **Astro 5**, **Tailwind CSS v4**, and **build-time KaTeX**.
+Modern, bilingual (`EN` / `IT`), cookieless, and security-hardened personal website built with **Astro 7**, **Tailwind CSS v4**, and **build-time KaTeX**.
 
 ## Key Features
 
