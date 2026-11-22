@@ -22,7 +22,7 @@ export const cvData: Record<Lang, CvData> = {
     pdfPath: '/assets/pdf/CV_Simone_De_Bonis_eng.pdf',
     experience: [
       {
-        title: 'Machine Learning Engineer',
+        title: 'Data Scientist',
         organization: 'Intesa Sanpaolo',
         location: 'Torino, IT',
         period: 'Jan 2025 – Present',
@@ -113,7 +113,7 @@ export const cvData: Record<Lang, CvData> = {
     pdfPath: '/assets/pdf/CV_Simone_De_Bonis_ita.pdf',
     experience: [
       {
-        title: 'Machine Learning Engineer',
+        title: 'Data Scientist',
         organization: 'Intesa Sanpaolo',
         location: 'Torino, IT',
         period: 'Gen 2025 – Presente',

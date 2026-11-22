@@ -6,7 +6,7 @@ Modern, bilingual (`EN` / `IT`), cookieless, and security-hardened personal webs
 
 - **Option A — Sticky Glass Top Navbar & Executive Hero:** High-impact personal landing page with a 3-column Bento summary grid, career highlights, featured projects, and latest technical articles.
 - **Single-Source Synchronized Bilingual Support (`EN` / `IT`):**
-  - `src/data/profile.ts`: Profile bio, current role (`Machine Learning Engineer @ Intesa Sanpaolo`), and work highlights in English and Italian.
+  - `src/data/profile.ts`: Profile bio, current role (`Data Scientist @ Intesa Sanpaolo`), and work highlights in English and Italian.
   - `src/data/cv.ts`: Structured Experience, Education, and verified **MyOpenBadge** certifications, plus downloadable English and Italian PDF CVs.
 - **Build-Time KaTeX Math Rendering:** Zero runtime MathJax overhead or layout shifts; renders LaTeX formulas cleanly at build time alongside a sticky right-hand **Table of Contents**.
 - **Instant Client-Side Search (`⌘K` / `Ctrl+K`):** Search across articles, project case studies, and CV entries with zero external dependencies.

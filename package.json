@@ -3,7 +3,7 @@
   "type": "module",
   "version": "2.0.0",
   "private": true,
-  "description": "Personal website and portfolio of Simone De Bonis — Machine Learning Engineer & Data Scientist",
+  "description": "Simone De Bonis — Data Scientist",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

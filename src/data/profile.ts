@@ -30,7 +30,7 @@ export interface ProfileData {
 export const profile: Record<Lang, ProfileData> = {
   en: {
     name: 'Simone De Bonis',
-    role: 'Machine Learning Engineer / Data Scientist',
+    role: 'Data Scientist',
     location: 'Torino, Italy',
     avatar: '/assets/img/posts/profile.jpg',
     emailUser: 'simonedebonis',
@@ -39,17 +39,17 @@ export const profile: Record<Lang, ProfileData> = {
     linkedin: 'https://www.linkedin.com/in/simonedebonis/',
     cvPdfPath: '/assets/pdf/CV_Simone_De_Bonis_eng.pdf',
     tagline:
-      'Machine Learning Engineer & Data Scientist passionate about finance, energy markets, and quantitative modeling.',
-    bio: 'I design and deploy production machine learning systems and quantitative forecasting models. Currently working as a Machine Learning Engineer at Intesa Sanpaolo in Torino, after building energy trading forecasting pipelines at Psaier Energies.',
+      'Data Scientist passionate about finance, energy markets, and quantitative modeling.',
+    bio: 'I design and deploy production machine learning systems and quantitative forecasting models. Currently working as Data Scientist at Intesa Sanpaolo in Torino, after building energy trading forecasting pipelines at Psaier Energies.',
     domainPills: [
-      'Machine Learning Engineering',
+      'Data Science',
+      'AI',
       'Quantitative Modeling',
       'Financial & Energy Markets',
-      'Time Series & Anomaly Detection',
     ],
     currentWork: [
       {
-        title: 'Machine Learning Engineer',
+        title: 'Data Scientist',
         organization: 'Intesa Sanpaolo',
         period: 'Jan 2025 – Present · Torino, IT',
         description:
@@ -101,7 +101,7 @@ export const profile: Record<Lang, ProfileData> = {
   },
   it: {
     name: 'Simone De Bonis',
-    role: 'Machine Learning Engineer / Data Scientist',
+    role: 'Data Scientist',
     location: 'Torino, Italia',
     avatar: '/assets/img/posts/profile.jpg',
     emailUser: 'simonedebonis',
@@ -110,8 +110,8 @@ export const profile: Record<Lang, ProfileData> = {
     linkedin: 'https://www.linkedin.com/in/simonedebonis/',
     cvPdfPath: '/assets/pdf/CV_Simone_De_Bonis_ita.pdf',
     tagline:
-      'Machine Learning Engineer & Data Scientist appassionato di finanza, mercati energetici e modellazione quantitativa.',
-    bio: 'Progetto e porto in produzione sistemi di Machine Learning e modelli quantitativi di previsione. Attualmente lavoro come Machine Learning Engineer in Intesa Sanpaolo a Torino, dopo aver sviluppato modelli predittivi per il trading energetico presso Psaier Energies.',
+      'Data Scientist appassionato di finanza, mercati energetici e modellazione quantitativa.',
+    bio: 'Progetto e porto in produzione sistemi di Machine Learning e modelli quantitativi di previsione. Attualmente lavoro come Data Scientist in Intesa Sanpaolo a Torino, dopo aver sviluppato modelli predittivi per il trading energetico presso Psaier Energies.',
     domainPills: [
       'Machine Learning Engineering',
       'Modellazione Quantitativa',
@@ -120,7 +120,7 @@ export const profile: Record<Lang, ProfileData> = {
     ],
     currentWork: [
       {
-        title: 'Machine Learning Engineer',
+        title: 'Data Scientist',
         organization: 'Intesa Sanpaolo',
         period: 'Gen 2025 – Presente · Torino, IT',
         description:
